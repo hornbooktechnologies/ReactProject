@@ -1,0 +1,565 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: OpexTab OpexTab renders correctly 1`] = `
+<li
+  className="uk-active"
+>
+  <div
+    className="uk-grid-match  uk-grid"
+    uk-grid="true"
+  >
+    <div
+      className="uk-margin-bottom@s uk-width-1-2@m uk-first-column"
+    >
+      <div
+        className="uk-card uk-card-default uk-height-1-1 uk-card-body uk-text-center pb-10"
+      />
+    </div>
+    <div
+      className="uk-margin-bottom@ uk-width-1-4@m"
+    >
+      <div
+        className="uk-card uk-card-body mb-20 uk-flex uk-flex-column"
+      >
+        <h6
+          className="font-16"
+        >
+          CURRENT_STATUS.OPERATIONAL_COST
+        </h6>
+        <div
+          className="uk-flex uk-flex-middle uk-flex uk-height-1-1"
+        >
+          <div
+            className="uk-flex-left uk-width-1-4 uk-text-left"
+          >
+            <div
+              className="uk-flex-left uk-width-1-2"
+            >
+              <label
+                className="font-12"
+              >
+                LABELS.PLAN
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    <span
+                      className="seriesPrefix"
+                    >
+                      ¥
+                    </span>
+                    <span
+                      className="seriesValue"
+                    >
+                      23
+                    </span>
+                    <span
+                      className="uk-text-top font-10"
+                    >
+                      Oku
+                    </span>
+                  </strong>
+                </span>
+              </p>
+            </div>
+            <div
+              className="uk-flex-left uk-width-1-2"
+            >
+              <label
+                className="font-12"
+              >
+                LABELS.FORECAST
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    <span
+                      className="seriesPrefix"
+                    >
+                      ¥
+                    </span>
+                    <span
+                      className="seriesValue"
+                    >
+                      42
+                    </span>
+                    <span
+                      className="uk-text-top font-10"
+                    >
+                      Oku
+                    </span>
+                  </strong>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            className="uk-flex-right uk-width-3-4 undefined"
+          >
+            <div
+              className="uk-flex uk-flex-center"
+            >
+              <div
+                className="chart-continer"
+                style={
+                  Object {
+                    "height": 120,
+                    "width": 120,
+                  }
+                }
+              >
+                <div
+                  className="dount-chart-container"
+                >
+                  <div />
+                </div>
+                <div
+                  className="smallPieChart donutmiddleData"
+                >
+                  <div
+                    className="uk-text-center thumb-font"
+                  >
+                    <div
+                      className="jera-dislike-font"
+                    >
+                      <i
+                        className="jera color-red-60 jera-dislike"
+                      />
+                    </div>
+                    <div
+                      className="font-prvalue color-red-60"
+                    >
+                      <span>
+                        182.61
+                      </span>
+                      <span
+                        className="font-12 vertical-top"
+                      >
+                        %
+                      </span>
+                    </div>
+                    <div>
+                      <span
+                        className="font-12 totalRatio"
+                      >
+                        CHARTS.DONUT.TOOLTIP_HEAD
+                      </span>
+                      <span
+                        className="uk-tooltip-cutom tooltip-text"
+                      >
+                        <i
+                          className="jera-info-circle icn-16 color-blue-70 top-2 ml-3"
+                        />
+                        <div
+                          className="uk-tooltip uk-animation-scale-up uk-animation-center uk-transdorm-origin-center-left uk-togglabe-enter uk-tooltip-bottom uk-tooltip-bottom-center uk-transform-origin-center-left uk-text-left font-10"
+                        >
+                          <span
+                            className="color-grey-blue-80 uk-display-block"
+                          >
+                            <strong
+                              className="color-grey-blue-95"
+                            >
+                              CHARTS.DONUT.TOOLTIP_MAIN_TEXT
+                            </strong>
+                              
+                            CHARTS.DONUT.TOOLTIP_SUB_TEXT
+                          </span>
+                          <span
+                            className="color-red-60 mt-15 uk-display-block"
+                          >
+                            CHARTS.DONUT.EQUATION
+                          </span>
+                          <span
+                            className="color-grey-blue-80 uk-display-block"
+                          >
+                            CHARTS.DONUT.EQUATION_LHS
+                             = Y (
+                            LABELS.FORECAST
+                            ) / X (
+                            LABELS.PLAN
+                            )
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="uk-card uk-card-body uk-flex uk-flex-column"
+      >
+        <h6
+          className="font-16"
+        >
+          LABELS.MAINTENANCE_COST
+        </h6>
+        <div
+          className="uk-flex uk-flex-middle uk-flex uk-height-1-1"
+        >
+          <div
+            className="uk-flex-left uk-width-1-4 uk-text-left"
+          >
+            <div
+              className="uk-flex-left uk-width-1-2"
+            >
+              <label
+                className="font-12"
+              >
+                LABELS.PLAN
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    <span
+                      className="seriesPrefix"
+                    >
+                      ¥
+                    </span>
+                    <span
+                      className="seriesValue"
+                    >
+                      189
+                    </span>
+                    <span
+                      className="uk-text-top font-10"
+                    >
+                      Oku
+                    </span>
+                  </strong>
+                </span>
+              </p>
+            </div>
+            <div
+              className="uk-flex-left uk-width-1-2"
+            >
+              <label
+                className="font-12"
+              >
+                LABELS.FORECAST
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    <span
+                      className="seriesPrefix"
+                    >
+                      ¥
+                    </span>
+                    <span
+                      className="seriesValue"
+                    >
+                      138
+                    </span>
+                    <span
+                      className="uk-text-top font-10"
+                    >
+                      Oku
+                    </span>
+                  </strong>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            className="uk-flex-right uk-width-3-4 undefined"
+          >
+            <div
+              className="uk-flex uk-flex-center"
+            >
+              <div
+                className="chart-continer"
+                style={
+                  Object {
+                    "height": 120,
+                    "width": 120,
+                  }
+                }
+              >
+                <div
+                  className="dount-chart-container"
+                >
+                  <div />
+                </div>
+                <div
+                  className="smallPieChart donutmiddleData"
+                >
+                  <div
+                    className="uk-text-center thumb-font"
+                  >
+                    <div
+                      className="jera-like-font"
+                    >
+                      <i
+                        className="jera color-green-60 jera-like-1"
+                      />
+                    </div>
+                    <div
+                      className="font-prvalue color-green-60"
+                    >
+                      <span>
+                        73.02
+                      </span>
+                      <span
+                        className="font-12 vertical-top"
+                      >
+                        %
+                      </span>
+                    </div>
+                    <div>
+                      <span
+                        className="font-12 totalRatio"
+                      >
+                        CHARTS.DONUT.TOOLTIP_HEAD
+                      </span>
+                      <span
+                        className="uk-tooltip-cutom tooltip-text"
+                      >
+                        <i
+                          className="jera-info-circle icn-16 color-blue-70 top-2 ml-3"
+                        />
+                        <div
+                          className="uk-tooltip uk-animation-scale-up uk-animation-center uk-transdorm-origin-center-left uk-togglabe-enter uk-tooltip-bottom uk-tooltip-bottom-center uk-transform-origin-center-left uk-text-left font-10"
+                        >
+                          <span
+                            className="color-grey-blue-80 uk-display-block"
+                          >
+                            <strong
+                              className="color-grey-blue-95"
+                            >
+                              CHARTS.DONUT.TOOLTIP_MAIN_TEXT
+                            </strong>
+                              
+                            CHARTS.DONUT.TOOLTIP_SUB_TEXT
+                          </span>
+                          <span
+                            className="color-red-60 mt-15 uk-display-block"
+                          >
+                            CHARTS.DONUT.EQUATION
+                          </span>
+                          <span
+                            className="color-grey-blue-80 uk-display-block"
+                          >
+                            CHARTS.DONUT.EQUATION_LHS
+                             = Y (
+                            LABELS.FORECAST
+                            ) / X (
+                            LABELS.PLAN
+                            )
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="uk-margin-bottom@s uk-width-1-4@m"
+    >
+      <div
+        className="uk-card uk-height-1-1 uk-flex uk-flex-column"
+      >
+        <h6
+          className="font-16"
+        >
+          CURRENT_STATUS.OPEX_TOTAL
+        </h6>
+        <div
+          className="uk-flex"
+        >
+          <div
+            className="uk-flex-left uk-width-1-2 uk-text-center"
+          >
+            <label
+              className="font-14"
+            >
+              LABELS.PLAN
+            </label>
+            <p
+              className="mb-10 mt-5 font-14"
+            >
+              <span
+                className=""
+              >
+                <strong>
+                  <span
+                    className="seriesPrefix"
+                  >
+                    ¥
+                  </span>
+                  <span
+                    className="seriesValue"
+                  >
+                    212
+                  </span>
+                  <span
+                    className="uk-text-top font-10"
+                  >
+                    Oku
+                  </span>
+                </strong>
+              </span>
+            </p>
+          </div>
+          <div
+            className="uk-flex-left uk-width-1-2 uk-text-center"
+          >
+            <label
+              className="font-14"
+            >
+              LABELS.FORECAST
+            </label>
+            <p
+              className="mb-10 mt-5 font-14"
+            >
+              <span
+                className=""
+              >
+                <strong>
+                  <span
+                    className="seriesPrefix"
+                  >
+                    ¥
+                  </span>
+                  <span
+                    className="seriesValue"
+                  >
+                    181
+                  </span>
+                  <span
+                    className="uk-text-top font-10"
+                  >
+                    Oku
+                  </span>
+                </strong>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div
+          className="uk-flex uk-flex-center large-pie"
+        >
+          <div
+            className="mt-30"
+          >
+            <div
+              className="uk-flex uk-flex-center"
+            >
+              <div
+                className="chart-continer"
+                style={
+                  Object {
+                    "height": 170,
+                    "width": 170,
+                  }
+                }
+              >
+                <div
+                  className="dount-chart-container"
+                >
+                  <div />
+                </div>
+                <div
+                  className=" donutmiddleData"
+                >
+                  <div
+                    className="uk-text-center thumb-font"
+                  >
+                    <div
+                      className="jera-like-font"
+                    >
+                      <i
+                        className="jera color-green-60 jera-like-1"
+                      />
+                    </div>
+                    <div
+                      className="font-prvalue color-green-60"
+                    >
+                      <span>
+                        85.38
+                      </span>
+                      <span
+                        className="font-12 vertical-top"
+                      >
+                        %
+                      </span>
+                    </div>
+                    <div>
+                      <span
+                        className="font-12 totalRatio"
+                      >
+                        CHARTS.DONUT.TOOLTIP_HEAD
+                      </span>
+                      <span
+                        className="uk-tooltip-cutom tooltip-text"
+                      >
+                        <i
+                          className="jera-info-circle icn-16 color-blue-70 top-2 ml-3"
+                        />
+                        <div
+                          className="uk-tooltip uk-animation-scale-up uk-animation-center uk-transdorm-origin-center-left uk-togglabe-enter uk-tooltip-bottom uk-tooltip-bottom-center uk-transform-origin-center-left uk-text-left font-10"
+                        >
+                          <span
+                            className="color-grey-blue-80 uk-display-block"
+                          >
+                            <strong
+                              className="color-grey-blue-95"
+                            >
+                              CHARTS.DONUT.TOOLTIP_MAIN_TEXT
+                            </strong>
+                              
+                            CHARTS.DONUT.TOOLTIP_SUB_TEXT
+                          </span>
+                          <span
+                            className="color-red-60 mt-15 uk-display-block"
+                          >
+                            CHARTS.DONUT.EQUATION
+                          </span>
+                          <span
+                            className="color-grey-blue-80 uk-display-block"
+                          >
+                            CHARTS.DONUT.EQUATION_LHS
+                             = Y (
+                            LABELS.FORECAST
+                            ) / X (
+                            LABELS.PLAN
+                            )
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+`;

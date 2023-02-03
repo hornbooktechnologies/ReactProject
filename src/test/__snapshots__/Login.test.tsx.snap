@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Login Login renders correctly 1`] = `
+<div
+  className="main-content no-sidebar"
+>
+  <div
+    className="content"
+    id="content-section"
+  >
+    <div
+      className="h-100vh uk-flex uk-flex-middle uk-position-relative"
+    >
+      <button
+        className="uk-button uk-button-primary uk-button-large uk-margin-auto btn-shadow"
+        disabled={true}
+        onClick={[Function]}
+      >
+        LOGIN.LOGIN_BTN
+      </button>
+    </div>
+  </div>
+</div>
+`;

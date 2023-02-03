@@ -1,0 +1,93 @@
+@import '_color';
+@import '_variables';
+
+.uk-dropdown {
+  padding: 2*$val10 $val10;
+  .uk-navbar-dropdown-nav {
+    > li {
+      > a {
+        padding-left: $val10;
+        padding-right: $val10;
+        border-radius: $val10 - 2px;
+      }
+      &:hover,
+      &.active {
+        > a {
+          background-color: rgba($white, 0.1);
+        }
+      }
+      .uk-dropdown-submenu {
+        max-height: 155px;
+        overflow-y: $auto;
+        li {
+          a {
+            position: $relative;
+            padding: 5px 10px 5px 30px;
+            background-color: rgba($white, 0.05);
+              .icn-check {
+              position: $absolute;
+              left: 9px;
+              top: 9px;
+              display: $none;
+            }
+          }
+          &:last-child {
+            a {
+              border-radius: 0px 0px 8px 8px;
+            }
+          }
+          &.active {
+            a {
+              color: $blue_80 !important;
+              .icn-check {
+                display: $block;
+                color: $blue_80 !important;
+              }
+            }
+          }
+        }
+      }
+      &.uk-dropdown-item {
+        max-height: 32px;
+        transition: all 0.4s ease-in-out;
+        > a {
+          .jera-arrow-down-1 {
+            transform: translateY(-$val50) rotate(90deg);
+            opacity: 0.5;
+            transition: 0.3s ease;
+            transform-origin: $center $center;
+            position: $relative;
+            top: 7px;
+          }
+        }
+        .dropdown-list {
+          visibility: $hidden;
+          opacity: 0;
+          top: $val100;
+          left: 0;
+          width: $w100;
+          transform: translateY(-0.1em);
+          z-index: -1;
+          transition: all 0.4s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.3s;
+        }
+        &.active {
+          max-height: $val185;
+          > a {
+            border-radius: 8px 8px 0px 0px;
+            .jera-arrow-down-1 {
+              transform: translateY(-$val50) rotate(0deg);
+            }
+          }
+          .dropdown-list {
+            visibility: visible; /* shows sub-menu */
+            opacity: 1;
+            display: $block;
+            z-index: 1;
+            transform: translateY(0%);
+            transition-delay: 0.1s, 0s, 0.5s;
+          }
+        }
+      }
+    }
+  }
+}

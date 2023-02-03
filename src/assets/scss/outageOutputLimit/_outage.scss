@@ -1,0 +1,87 @@
+@import '../_color';
+@import '../_variables';
+@import '../_mixins';
+
+.uk-main-title h3 {
+  margin: $val0;
+  color: $grey_blue_90;
+}
+.m-w-300 {
+  min-width: 300px;
+}
+
+// Apex chart tooltip
+.apexcharts-tooltip {
+  &.apexcharts-theme-light{
+    border: 1px $solid $grey_blue_20 !important;
+    border-radius: $val10 - 2 !important;
+    background: rgba($color_input_focus, 0.70) !important;
+    font-size: $val10 + 2;
+  }
+  .apexcharts-tooltip-rangebar {
+    padding: $val0 !important;
+    text-align: $left !important;
+    & div:nth-child(1)  {
+      padding: $val10 - 2 $val10;
+      background: $blue_dark_2;
+    } & span {
+      margin-bottom: $val0 !important;
+      font-weight: normal !important;
+      color: $white !important; 
+    }
+    & div:nth-child(2) {
+      padding: $val10;
+    } 
+  }
+}
+// Apex Chart start
+.apexcharts-text{
+  color: $white !important;
+}
+.apexcharts-legend-text{
+  color: $white !important;
+}
+// Apex Chart end
+
+.main-timeline-chart {
+  position: $relative;
+  z-index: 1;
+  padding-right: 70px;
+}
+
+.sub-timeline-chart {
+  position: $relative;
+  padding-right: 70px;
+  margin-top: 0px;
+  z-index: 1;
+}
+
+.outage-line-chart {
+  padding-left: 130px;
+}
+
+.timeseries-legends {
+  margin-top: 20px;
+
+  .actualLegend {
+    background: $red_60;
+  }
+
+  .forecastLegend {
+    background: $blue_40;
+  }
+
+  .salesLegend {
+    background: $orange_60;
+  }
+}
+
+.unitWiseLineChart {
+  position: relative;
+  padding-left: 105px;
+  margin-top: -25px;
+
+  .apexcharts-toolbar {
+    right: 70px !important;
+  }
+}

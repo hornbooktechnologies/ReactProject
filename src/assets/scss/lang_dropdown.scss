@@ -1,0 +1,31 @@
+@import '_color';
+@import '_variables';
+
+.langDropdown {
+   .uk-nav-default {
+       .uk-active {
+           a {
+               color: $white;
+            }
+           a:hover {
+            color: $blue_80 !important;
+           }
+       }
+       .uk-navbar-dropdown-nav{
+            li {
+              a {
+                  img {
+                      width: 2*$val10;
+                      height: 2*$val10;
+                  }
+              }
+            }
+       }
+   }
+}
+  @media (max-width: 1200px) {
+    .for-w {
+      display: $none !important;
+    }
+  }
+

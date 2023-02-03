@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Top20DurationOfSpread Top20DurationOfSpread renders correctly 1`] = `
+Array [
+  <h5
+    className="mb-24 mt-24 font-18 uk-text-medium"
+  >
+    UNIT_OPERATION.DURATION_OF_SPREAD_HEADER
+  </h5>,
+  <ul
+    className="uk-tab "
+    uk-tab="true"
+  >
+    <li
+      className="uk-active"
+      onClick={[Function]}
+    >
+      <a
+        href="about:blank"
+      >
+         
+        LABELS.ACTUAL
+      </a>
+    </li>
+    <li
+      className=""
+      onClick={[Function]}
+    >
+      <a
+        href="about:blank"
+      >
+         
+        LABELS.FORECAST
+      </a>
+    </li>
+  </ul>,
+  <ul
+    className="uk-switcher mt-24"
+  >
+    <li
+      className="uk-active"
+    >
+      <div
+        className="mt-24"
+      >
+        <div
+          className="uk-overflow-auto max-height-500"
+        >
+          <table
+            className="uk-table uk-table-divider uk-text-right min-w-1190"
+          >
+            <thead
+              className="spreadOperationTable"
+            >
+              <tr>
+                <th
+                  className="uk-text-center"
+                >
+                  UNIT_OPERATION.DURATION_OF_SPREAD_TABLE_HEADER.NO
+                </th>
+                <th
+                  className="uk-text-center"
+                >
+                  UNIT_OPERATION.DURATION_OF_SPREAD_TABLE_HEADER.DURATION
+                </th>
+                <th
+                  className="uk-text-center"
+                >
+                  UNIT_OPERATION.DURATION_OF_SPREAD_TABLE_HEADER.OPERATION_START
+                </th>
+                <th
+                  className="uk-text-center"
+                >
+                  UNIT_OPERATION.DURATION_OF_SPREAD_TABLE_HEADER.OPERATION_END
+                </th>
+                <th
+                  className="uk-text-center"
+                >
+                  <span
+                    className="uk-display-inline-block"
+                  >
+                    UNIT_OPERATION.DURATION_OF_SPREAD_TABLE_HEADER.OUTPUT
+                    <span
+                      className="font-12"
+                    >
+                      (
+                      UNIT_OPERATION.DURATION_OF_SPREAD_TABLE_HEADER.AVERAGE
+                      )
+                    </span>
+                    <span
+                      className="uk-text-right font-12 uk-display-block"
+                    >
+                      【
+                      UNIT_OPERATION.DURATION_OF_SPREAD_TABLE_HEADER.OUTPUT_UNIT
+                      】
+                    </span>
+                  </span>
+                </th>
+                <th
+                  className="uk-text-center"
+                >
+                  UNIT_OPERATION.DURATION_OF_SPREAD_TABLE_HEADER.GROSS_MARGIN
+                  <span
+                    className="uk-display-inline-block"
+                  >
+                    <span
+                      className="uk-text-right font-12 uk-display-block"
+                    >
+                      【
+                      UNIT_OPERATION.DURATION_OF_SPREAD_TABLE_HEADER.GROSS_MARGIN_UNIT
+                      】
+                    </span>
+                  </span>
+                </th>
+                <th
+                  className="uk-text-center"
+                >
+                  <span
+                    className="uk-display-inline-block"
+                  >
+                    UNIT_OPERATION.DURATION_OF_SPREAD_TABLE_HEADER.SPREAD
+                    <span
+                      className="font-12"
+                    >
+                      (
+                      UNIT_OPERATION.DURATION_OF_SPREAD_TABLE_HEADER.AVERAGE
+                      )
+                    </span>
+                    <span
+                      className="uk-text-right font-12 uk-display-block"
+                    >
+                      【
+                      UNIT_OPERATION.DURATION_OF_SPREAD_TABLE_HEADER.SPREAD_UNIT
+                      】
+                    </span>
+                  </span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  1
+                </td>
+                <td>
+                  23
+                </td>
+                <td
+                  className="uk-text-center"
+                >
+                  2022/3/11 17:37
+                </td>
+                <td
+                  className="uk-text-center"
+                >
+                  2022/3/11 17:37
+                </td>
+                <td>
+                  478
+                </td>
+                <td>
+                  -1.01
+                </td>
+                <td>
+                  -1.10
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </li>
+  </ul>,
+]
+`;

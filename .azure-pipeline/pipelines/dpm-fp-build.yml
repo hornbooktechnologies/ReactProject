@@ -1,0 +1,68 @@
+trigger: none 
+
+resources:
+  repositories:
+  - repository: Deployment
+    type: github
+    endpoint: jeraoss
+    name: jeraoss/dpm-fe-deployment
+
+    ref: main
+
+variables:
+
+- ${{if contains(variables['Build.SourceBranch'], 'refs/heads/feature') }}:
+  - name: env
+    value: dev
+- ${{ if contains(variables['Build.SourceBranch'], 'refs/heads/master') }}:
+  - name: env
+    value: dev
+- ${{ if and(contains(variables['Build.SourceBranch'], 'refs/tags/v'), contains(variables['Build.SourceBranch'], '-rc')) }}:
+  - name: env
+    value: stg
+- ${{ if and(contains(variables['Build.SourceBranch'], 'refs/tags/v'), not(contains(variables['Build.SourceBranch'], '-rc'))) }}:
+  - name: env
+    value: prd
+- group: pipeline   
+- group: ${{ variables.env }}-envs
+    
+stages:
+- template: ../templates/stages/prepare.yml
+- template: ../templates/stages/build.yml
+  parameters:
+    ${{ if and(eq(variables['Build.Reason'], 'PullRequest'),eq(variables['System.PullRequest.TargetBranch'], 'refs/heads/master')) }}: 
+      stage: PR
+    ${{ if contains(variables['Build.SourceBranch'], 'refs/heads/feature') }}:
+      stage: Preview 
+      API_URL: $(API_URL)
+      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID)
+      AZURE_TENANT_ID: $(AZURE_TENANT_ID)
+      AZURE_REDIRECT_URI: $(AZURE_REDIRECT_URI)
+      AZURE_SCOPE: $(AZURE_SCOPE)
+      OOT_REDIRECT_URI: $(OOT_REDIRECT_URI)
+    ${{ if contains(variables['Build.SourceBranch'], 'refs/heads/master') }}:
+      stage: Dev
+      API_URL: $(API_URL)
+      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID)
+      AZURE_TENANT_ID: $(AZURE_TENANT_ID)
+      AZURE_REDIRECT_URI: $(AZURE_REDIRECT_URI)
+      AZURE_SCOPE: $(AZURE_SCOPE)
+      OOT_REDIRECT_URI: $(OOT_REDIRECT_URI)
+    ${{ if and(contains(variables['Build.SourceBranch'], 'refs/tags/v'), contains(variables['Build.SourceBranch'], '-rc')) }}:
+      stage: Staging
+      API_URL: $(API_URL)
+      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID)
+      AZURE_TENANT_ID: $(AZURE_TENANT_ID)
+      AZURE_REDIRECT_URI: $(AZURE_REDIRECT_URI)
+      AZURE_SCOPE: $(AZURE_SCOPE)
+      OOT_REDIRECT_URI: $(OOT_REDIRECT_URI)
+    ${{ if and(contains(variables['Build.SourceBranch'], 'refs/tags/v'), not(contains(variables['Build.SourceBranch'], '-rc'))) }}:
+      stage: Production
+      API_URL: $(API_URL)
+      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID)
+      AZURE_TENANT_ID: $(AZURE_TENANT_ID)
+      AZURE_REDIRECT_URI: $(AZURE_REDIRECT_URI)
+      AZURE_SCOPE: $(AZURE_SCOPE)
+      OOT_REDIRECT_URI: $(OOT_REDIRECT_URI)
+
+- template: ../templates/stages/cleanup.yml

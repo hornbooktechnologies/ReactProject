@@ -1,0 +1,888 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: GrossMarginTab GrossMarginTab renders correctly 1`] = `
+<li
+  className=""
+>
+  <div
+    className="mt-24"
+  >
+    <h6
+      className="m-0"
+    >
+      LABELS.ELECT_ENG_SOLD
+    </h6>
+    <div
+      className="uk-card mt-24"
+      uk-card="true"
+    >
+      <div
+        className="uk-grid-small uk-grid ml-0"
+        uk-grid="true"
+      >
+        <div
+          className="uk-margin-bottom@s uk-width-3-4@m uk-padding-remove-left"
+        >
+          <div
+            className="uk-flex-middle"
+          />
+        </div>
+        <div
+          className="uk-margin-bottom@s uk-width-1-4@m uk-padding-small mt-50"
+        >
+          <div
+            className="uk-flex"
+          >
+            <div
+              className="uk-flex-left uk-width-1-2 uk-text-center"
+            >
+              <label
+                className="font-14"
+              >
+                LABELS.PLAN
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    
+                    
+                    
+                  </strong>
+                </span>
+              </p>
+            </div>
+            <div
+              className="uk-flex-left uk-width-1-2 uk-text-center"
+            >
+              <label
+                className="font-14"
+              >
+                LABELS.FORECAST
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    
+                    
+                    
+                  </strong>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            className="uk-flex uk-flex-center undefined"
+          >
+            <div
+              className="mt-30"
+            >
+              <div
+                className="uk-flex uk-flex-center"
+              >
+                <div
+                  className="chart-continer"
+                  style={
+                    Object {
+                      "height": 170,
+                      "width": 170,
+                    }
+                  }
+                >
+                  <div
+                    className="dount-chart-container"
+                  >
+                    <div />
+                  </div>
+                  <div
+                    className=" donutmiddleData"
+                  >
+                    <div
+                      className="uk-text-center thumb-font"
+                    >
+                      <div
+                        className="jera-dislike-font"
+                      >
+                        <i
+                          className="jera color-red-60 jera-dislike"
+                        />
+                      </div>
+                      <div
+                        className="font-prvalue color-red-60"
+                      >
+                        <span>
+                          0
+                        </span>
+                        <span
+                          className="font-12 vertical-top"
+                        >
+                          %
+                        </span>
+                      </div>
+                      <div>
+                        <span
+                          className="font-12 totalRatio"
+                        >
+                          CHARTS.DONUT.TOOLTIP_HEAD
+                        </span>
+                        <span
+                          className="uk-tooltip-cutom tooltip-text"
+                        >
+                          <i
+                            className="jera-info-circle icn-16 color-blue-70 top-2 ml-3"
+                          />
+                          <div
+                            className="uk-tooltip uk-animation-scale-up uk-animation-center uk-transdorm-origin-center-left uk-togglabe-enter uk-tooltip-bottom uk-tooltip-bottom-center uk-transform-origin-center-left uk-text-left font-10"
+                          >
+                            <span
+                              className="color-grey-blue-80 uk-display-block"
+                            >
+                              <strong
+                                className="color-grey-blue-95"
+                              >
+                                CHARTS.DONUT.TOOLTIP_MAIN_TEXT
+                              </strong>
+                                
+                              CHARTS.DONUT.TOOLTIP_SUB_TEXT
+                            </span>
+                            <span
+                              className="color-red-60 mt-15 uk-display-block"
+                            >
+                              CHARTS.DONUT.EQUATION
+                            </span>
+                            <span
+                              className="color-grey-blue-80 uk-display-block"
+                            >
+                              CHARTS.DONUT.EQUATION_LHS
+                               = Y (
+                              LABELS.FORECAST
+                              ) / X (
+                              LABELS.PLAN
+                              )
+                            </span>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="mt-24"
+  >
+    <h6
+      className="m-0"
+    >
+      ANNUAL_TARGET.SPREAD
+    </h6>
+    <div
+      className="uk-card mt-24"
+      uk-card="true"
+    >
+      <div
+        className="uk-grid-small uk-grid ml-0"
+        uk-grid="true"
+      >
+        <div
+          className="uk-margin-bottom@s uk-width-3-4@m uk-padding-remove-left"
+        >
+          <div
+            className="uk-flex-middle"
+          />
+        </div>
+        <div
+          className="uk-margin-bottom@s uk-width-1-4@m uk-padding-small mt-50"
+        >
+          <div
+            className="uk-flex"
+          >
+            <div
+              className="uk-flex-left uk-width-1-2 uk-text-center"
+            >
+              <label
+                className="font-14"
+              >
+                LABELS.PLAN
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    
+                    
+                    
+                  </strong>
+                </span>
+              </p>
+            </div>
+            <div
+              className="uk-flex-left uk-width-1-2 uk-text-center"
+            >
+              <label
+                className="font-14"
+              >
+                LABELS.FORECAST
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    
+                    
+                    
+                  </strong>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            className="uk-flex uk-flex-center undefined"
+          >
+            <div
+              className="mt-30"
+            >
+              <div
+                className="uk-flex uk-flex-center"
+              >
+                <div
+                  className="chart-continer"
+                  style={
+                    Object {
+                      "height": 170,
+                      "width": 170,
+                    }
+                  }
+                >
+                  <div
+                    className="dount-chart-container"
+                  >
+                    <div />
+                  </div>
+                  <div
+                    className=" donutmiddleData"
+                  >
+                    <div
+                      className="uk-text-center thumb-font"
+                    >
+                      <div
+                        className="jera-dislike-font"
+                      >
+                        <i
+                          className="jera color-red-60 jera-dislike"
+                        />
+                      </div>
+                      <div
+                        className="font-prvalue color-red-60"
+                      >
+                        <span>
+                          0
+                        </span>
+                        <span
+                          className="font-12 vertical-top"
+                        >
+                          %
+                        </span>
+                      </div>
+                      <div>
+                        <span
+                          className="font-12 totalRatio"
+                        >
+                          CHARTS.DONUT.TOOLTIP_HEAD
+                        </span>
+                        <span
+                          className="uk-tooltip-cutom tooltip-text"
+                        >
+                          <i
+                            className="jera-info-circle icn-16 color-blue-70 top-2 ml-3"
+                          />
+                          <div
+                            className="uk-tooltip uk-animation-scale-up uk-animation-center uk-transdorm-origin-center-left uk-togglabe-enter uk-tooltip-bottom uk-tooltip-bottom-center uk-transform-origin-center-left uk-text-left font-10"
+                          >
+                            <span
+                              className="color-grey-blue-80 uk-display-block"
+                            >
+                              <strong
+                                className="color-grey-blue-95"
+                              >
+                                CHARTS.DONUT.TOOLTIP_MAIN_TEXT
+                              </strong>
+                                
+                              CHARTS.DONUT.TOOLTIP_SUB_TEXT
+                            </span>
+                            <span
+                              className="color-red-60 mt-15 uk-display-block"
+                            >
+                              CHARTS.DONUT.EQUATION
+                            </span>
+                            <span
+                              className="color-grey-blue-80 uk-display-block"
+                            >
+                              CHARTS.DONUT.EQUATION_LHS
+                               = Y (
+                              LABELS.FORECAST
+                              ) / X (
+                              LABELS.PLAN
+                              )
+                            </span>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="mt-24"
+  >
+    <h6
+      className="m-0"
+    >
+      ANNUAL_TARGET.AVAILABLITY
+    </h6>
+    <div
+      className="uk-card mt-24"
+      uk-card="true"
+    >
+      <div
+        className="uk-grid-small uk-grid ml-0"
+        uk-grid="true"
+      >
+        <div
+          className="uk-margin-bottom@s uk-width-3-4@m uk-padding-remove-left"
+        >
+          <div
+            className="uk-flex-middle"
+          />
+        </div>
+        <div
+          className="uk-margin-bottom@s uk-width-1-4@m uk-padding-small mt-50"
+        >
+          <div
+            className="uk-flex"
+          >
+            <div
+              className="uk-flex-left uk-width-1-2 uk-text-center"
+            >
+              <label
+                className="font-14"
+              >
+                LABELS.PLAN
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    
+                    
+                    
+                  </strong>
+                </span>
+              </p>
+            </div>
+            <div
+              className="uk-flex-left uk-width-1-2 uk-text-center"
+            >
+              <label
+                className="font-14"
+              >
+                LABELS.FORECAST
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    
+                    
+                    
+                  </strong>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            className="uk-flex uk-flex-center undefined"
+          >
+            <div
+              className="mt-30"
+            >
+              <div
+                className="uk-flex uk-flex-center"
+              >
+                <div
+                  className="chart-continer"
+                  style={
+                    Object {
+                      "height": 170,
+                      "width": 170,
+                    }
+                  }
+                >
+                  <div
+                    className="dount-chart-container"
+                  >
+                    <div />
+                  </div>
+                  <div
+                    className=" donutmiddleData"
+                  >
+                    <div
+                      className="uk-text-center thumb-font"
+                    >
+                      <div
+                        className="jera-dislike-font"
+                      >
+                        <i
+                          className="jera color-red-60 jera-dislike"
+                        />
+                      </div>
+                      <div
+                        className="font-prvalue color-red-60"
+                      >
+                        <span>
+                          0
+                        </span>
+                        <span
+                          className="font-12 vertical-top"
+                        >
+                          %
+                        </span>
+                      </div>
+                      <div>
+                        <span
+                          className="font-12 totalRatio"
+                        >
+                          CHARTS.DONUT.TOOLTIP_HEAD
+                        </span>
+                        <span
+                          className="uk-tooltip-cutom tooltip-text"
+                        >
+                          <i
+                            className="jera-info-circle icn-16 color-blue-70 top-2 ml-3"
+                          />
+                          <div
+                            className="uk-tooltip uk-animation-scale-up uk-animation-center uk-transdorm-origin-center-left uk-togglabe-enter uk-tooltip-bottom uk-tooltip-bottom-center uk-transform-origin-center-left uk-text-left font-10"
+                          >
+                            <span
+                              className="color-grey-blue-80 uk-display-block"
+                            >
+                              <strong
+                                className="color-grey-blue-95"
+                              >
+                                CHARTS.DONUT.TOOLTIP_MAIN_TEXT
+                              </strong>
+                                
+                              CHARTS.DONUT.TOOLTIP_SUB_TEXT
+                            </span>
+                            <span
+                              className="color-red-60 mt-15 uk-display-block"
+                            >
+                              CHARTS.DONUT.EQUATION
+                            </span>
+                            <span
+                              className="color-grey-blue-80 uk-display-block"
+                            >
+                              CHARTS.DONUT.EQUATION_LHS
+                               = Y (
+                              LABELS.FORECAST
+                              ) / X (
+                              LABELS.PLAN
+                              )
+                            </span>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="mt-24"
+  >
+    <h6
+      className="m-0"
+    >
+      LABELS.THERMAL_EFFICIENCY
+    </h6>
+    <div
+      className="uk-card mt-24"
+      uk-card="true"
+    >
+      <div
+        className="uk-grid-small uk-grid ml-0"
+        uk-grid="true"
+      >
+        <div
+          className="uk-margin-bottom@s uk-width-3-4@m uk-padding-remove-left"
+        >
+          <div
+            className="uk-flex-middle"
+          />
+        </div>
+        <div
+          className="uk-margin-bottom@s uk-width-1-4@m uk-padding-small mt-50"
+        >
+          <div
+            className="uk-flex"
+          >
+            <div
+              className="uk-flex-left uk-width-1-2 uk-text-center"
+            >
+              <label
+                className="font-14"
+              >
+                LABELS.PLAN
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    
+                    
+                    
+                  </strong>
+                </span>
+              </p>
+            </div>
+            <div
+              className="uk-flex-left uk-width-1-2 uk-text-center"
+            >
+              <label
+                className="font-14"
+              >
+                LABELS.FORECAST
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    
+                    
+                    
+                  </strong>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            className="uk-flex uk-flex-center undefined"
+          >
+            <div
+              className="mt-30"
+            >
+              <div
+                className="uk-flex uk-flex-center"
+              >
+                <div
+                  className="chart-continer"
+                  style={
+                    Object {
+                      "height": 170,
+                      "width": 170,
+                    }
+                  }
+                >
+                  <div
+                    className="dount-chart-container"
+                  >
+                    <div />
+                  </div>
+                  <div
+                    className=" donutmiddleData"
+                  >
+                    <div
+                      className="uk-text-center thumb-font"
+                    >
+                      <div
+                        className="jera-dislike-font"
+                      >
+                        <i
+                          className="jera color-red-60 jera-dislike"
+                        />
+                      </div>
+                      <div
+                        className="font-prvalue color-red-60"
+                      >
+                        <span>
+                          0
+                        </span>
+                        <span
+                          className="font-12 vertical-top"
+                        >
+                          %
+                        </span>
+                      </div>
+                      <div>
+                        <span
+                          className="font-12 totalRatio"
+                        >
+                          CHARTS.DONUT.TOOLTIP_HEAD
+                        </span>
+                        <span
+                          className="uk-tooltip-cutom tooltip-text"
+                        >
+                          <i
+                            className="jera-info-circle icn-16 color-blue-70 top-2 ml-3"
+                          />
+                          <div
+                            className="uk-tooltip uk-animation-scale-up uk-animation-center uk-transdorm-origin-center-left uk-togglabe-enter uk-tooltip-bottom uk-tooltip-bottom-center uk-transform-origin-center-left uk-text-left font-10"
+                          >
+                            <span
+                              className="color-grey-blue-80 uk-display-block"
+                            >
+                              <strong
+                                className="color-grey-blue-95"
+                              >
+                                CHARTS.DONUT.TOOLTIP_MAIN_TEXT
+                              </strong>
+                                
+                              CHARTS.DONUT.TOOLTIP_SUB_TEXT
+                            </span>
+                            <span
+                              className="color-red-60 mt-15 uk-display-block"
+                            >
+                              CHARTS.DONUT.EQUATION
+                            </span>
+                            <span
+                              className="color-grey-blue-80 uk-display-block"
+                            >
+                              CHARTS.DONUT.EQUATION_LHS
+                               = Y (
+                              LABELS.FORECAST
+                              ) / X (
+                              LABELS.PLAN
+                              )
+                            </span>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="mt-24"
+  >
+    <h6
+      className="m-0"
+    >
+      ANNUAL_TARGET.HEAT_RATE
+    </h6>
+    <div
+      className="uk-card mt-24"
+      uk-card="true"
+    >
+      <div
+        className="uk-grid-small uk-grid ml-0"
+        uk-grid="true"
+      >
+        <div
+          className="uk-margin-bottom@s uk-width-3-4@m uk-padding-remove-left"
+        >
+          <div
+            className="uk-flex-middle"
+          />
+        </div>
+        <div
+          className="uk-margin-bottom@s uk-width-1-4@m uk-padding-small mt-50"
+        >
+          <div
+            className="uk-flex"
+          >
+            <div
+              className="uk-flex-left uk-width-1-2 uk-text-center"
+            >
+              <label
+                className="font-14"
+              >
+                LABELS.PLAN
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    
+                    
+                    
+                  </strong>
+                </span>
+              </p>
+            </div>
+            <div
+              className="uk-flex-left uk-width-1-2 uk-text-center"
+            >
+              <label
+                className="font-14"
+              >
+                LABELS.FORECAST
+              </label>
+              <p
+                className="mb-10 mt-5 font-14"
+              >
+                <span
+                  className=""
+                >
+                  <strong>
+                    
+                    
+                    
+                  </strong>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            className="uk-flex uk-flex-center undefined"
+          >
+            <div
+              className="mt-30"
+            >
+              <div
+                className="uk-flex uk-flex-center"
+              >
+                <div
+                  className="chart-continer"
+                  style={
+                    Object {
+                      "height": 170,
+                      "width": 170,
+                    }
+                  }
+                >
+                  <div
+                    className="dount-chart-container"
+                  >
+                    <div />
+                  </div>
+                  <div
+                    className=" donutmiddleData"
+                  >
+                    <div
+                      className="uk-text-center thumb-font"
+                    >
+                      <div
+                        className="jera-dislike-font"
+                      >
+                        <i
+                          className="jera color-red-60 jera-dislike"
+                        />
+                      </div>
+                      <div
+                        className="font-prvalue color-red-60"
+                      >
+                        <span>
+                          0
+                        </span>
+                        <span
+                          className="font-12 vertical-top"
+                        >
+                          %
+                        </span>
+                      </div>
+                      <div>
+                        <span
+                          className="font-12 totalRatio"
+                        >
+                          CHARTS.DONUT.TOOLTIP_HEAD
+                        </span>
+                        <span
+                          className="uk-tooltip-cutom tooltip-text"
+                        >
+                          <i
+                            className="jera-info-circle icn-16 color-blue-70 top-2 ml-3"
+                          />
+                          <div
+                            className="uk-tooltip uk-animation-scale-up uk-animation-center uk-transdorm-origin-center-left uk-togglabe-enter uk-tooltip-bottom uk-tooltip-bottom-center uk-transform-origin-center-left uk-text-left font-10"
+                          >
+                            <span
+                              className="color-grey-blue-80 uk-display-block"
+                            >
+                              <strong
+                                className="color-grey-blue-95"
+                              >
+                                CHARTS.DONUT.TOOLTIP_MAIN_TEXT
+                              </strong>
+                                
+                              CHARTS.DONUT.TOOLTIP_SUB_TEXT
+                            </span>
+                            <span
+                              className="color-red-60 mt-15 uk-display-block"
+                            >
+                              CHARTS.DONUT.EQUATION
+                            </span>
+                            <span
+                              className="color-grey-blue-80 uk-display-block"
+                            >
+                              CHARTS.DONUT.EQUATION_LHS
+                               = Y (
+                              LABELS.FORECAST
+                              ) / X (
+                              LABELS.PLAN
+                              )
+                            </span>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+`;

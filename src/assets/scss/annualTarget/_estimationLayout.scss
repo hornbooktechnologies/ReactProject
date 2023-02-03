@@ -1,0 +1,34 @@
+@import "../_color";
+@import "../_variables";
+
+
+
+// estimation List start//
+.pl-20 {
+  padding-left: 2*$val10 !important;
+}
+.indicate {
+  display: $inline_block; 
+  width: $val10;
+  height: $val10;
+  background: $blue_primary;
+  &.indicate-circle {
+    border-radius: $val50;
+  }
+  &.indicate-bordered {
+    border: 1px $solid $white;
+  }
+  &.bg-red-80 {
+    background-color: $red_70 !important;
+  }
+  &.bg-orange-80 {
+    background-color: $orange_70 !important;
+  }
+  &.bg-blue-80 {
+    background-color: $blue_70 !important;
+  }
+}
+.mb-40 {
+  margin-bottom: 4*$val10 !important;
+}
+// dataList end//

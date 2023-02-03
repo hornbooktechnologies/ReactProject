@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: TheSidebar TheSidebar renders correctly 1`] = `
+<div
+  className="uk-sidebar sidebar-left"
+>
+  <ul
+    className="uk-sidebar-nav h-100  uk-ps"
+    uk-scrollspy="closest: li; scroll: true"
+  >
+    <li
+      className="uk-sidebar-nav-item uk-c-pointer uk-parent uk-sidebar-nav-dropdown uk-show"
+      onClick={[Function]}
+    >
+      <a
+        className="uk-sidebar-nav-link1"
+        href="false"
+        onClick={[Function]}
+        tabIndex={0}
+        uk-tooltip="title:NAVIGATION.OVERVIEW; pos:left;"
+      >
+        <i
+          className="jera-home-trend-up"
+        />
+        <span>
+          NAVIGATION.OVERVIEW
+        </span>
+        <i
+          className="jera-arrow-down-1"
+        />
+      </a>
+      <ul
+        className="uk-sidebar-nav-dropdown-items uk-nav-sub"
+        id="subItemId"
+      >
+        <li
+          className="uk-sidebar-nav-item "
+          id="subItemId"
+          onClick={[Function]}
+        >
+          <a
+            className="uk-sidebar-nav-link  uk-active"
+            href="/CurrentStatus"
+            id="subItemId"
+            onClick={[Function]}
+            uk-tooltip="title:NAVIGATION.CURRENT_STATUS; pos:left;"
+          >
+            <i
+              className="jera-graph"
+              id="subItemId"
+            />
+            <span
+              id="subItemId"
+            >
+              NAVIGATION.CURRENT_STATUS
+            </span>
+          </a>
+        </li>
+        <li
+          className="uk-sidebar-nav-item "
+          id="subItemId"
+          onClick={[Function]}
+        >
+          <a
+            className="uk-sidebar-nav-link  color-white"
+            href="/AnnualTarget"
+            id="subItemId"
+            onClick={[Function]}
+            uk-tooltip="title:NAVIGATION.ANNUAL_TARGET; pos:left;"
+          >
+            <i
+              className="jera-graph"
+              id="subItemId"
+            />
+            <span
+              id="subItemId"
+            >
+              NAVIGATION.ANNUAL_TARGET
+            </span>
+          </a>
+        </li>
+        <li
+          className="uk-sidebar-nav-item "
+          id="subItemId"
+          onClick={[Function]}
+        >
+          <a
+            className="uk-sidebar-nav-link  color-white"
+            href="/OutageOutputlimit"
+            id="subItemId"
+            onClick={[Function]}
+            uk-tooltip="title:NAVIGATION.OUTAGE_OUTPUT_LIMIT; pos:left;"
+          >
+            <i
+              className="jera-status"
+              id="subItemId"
+            />
+            <span
+              id="subItemId"
+            >
+              NAVIGATION.OUTAGE_OUTPUT_LIMIT
+            </span>
+          </a>
+        </li>
+        <li
+          className="uk-sidebar-nav-item "
+          id="subItemId"
+          onClick={[Function]}
+        >
+          <a
+            className="uk-sidebar-nav-link  color-white"
+            href="/UnitOperation"
+            id="subItemId"
+            onClick={[Function]}
+            uk-tooltip="title:NAVIGATION.SPREAD_OPERATING; pos:left;"
+          >
+            <i
+              className="jera-building-4"
+              id="subItemId"
+            />
+            <span
+              id="subItemId"
+            >
+              NAVIGATION.SPREAD_OPERATING
+            </span>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+`;

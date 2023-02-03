@@ -1,0 +1,142 @@
+@import "_color";
+@import "_variables";
+
+.value {
+  font-weight: bold;
+  margin: 0 3px;
+  color: $white;
+}
+.unit {
+  font-weight: bold;
+  vertical-align: top;
+  color: $white;
+}
+.prefix {
+  vertical-align: top;
+  color: $white;
+  font-size: 20px;
+}
+.actual {
+  margin: 0 3px;
+  color: $white;
+  font-size: 50px;
+  line-height: 52px;
+}
+.chart-continer {
+  display: $flex;
+  position: $relative;
+  justify-content: $center;
+  align-items: $center;
+  float: right;
+}
+.dount-chart-container {
+  position: $absolute;
+  top: $val0;
+  left: $val0;  
+}
+ 
+//pie chart
+.jera {
+  font-size: 32px;
+}
+.font-prvalue {
+  font-weight: bold;
+  font-size: 16px !important;
+  letter-spacing: 0.2px;
+}
+
+.vertical-top {
+  vertical-align: top;
+}
+.tooltip-text {
+  text-transform: none !important;
+}
+.jera-info-circle {
+  color: $blue_70;
+  font-size: 14px !important;
+  margin-left: 3px;
+  top: 2px;
+}
+.z-index-99 {
+  z-index: 0;
+}
+.react-date-picker__calendar{
+  z-index: 99;
+}
+.seriesPrefix, .seriesValue {
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+
+.smallPieChart {
+  .jera {
+    font-size: 16px !important;
+  }
+  .font-prvalue {
+    font-weight: bold;
+    font-size: 15px !important;
+    letter-spacing: 0.2px;
+  }
+  .vertical-top {
+    vertical-align: top;
+  }
+  .thumb-font {
+    text-transform: capitalize;
+    letter-spacing: 0.2px;
+    font-family: "Noto Sans JP";
+  }
+  .totalRatio {
+    font-size: 10px;
+  }
+}
+// ool chart //
+.uk-border-dashed {
+  border-bottom: 1px dashed $white;
+}
+.donutmiddleData {
+  width: inherit !important;
+  padding: 0px 20px !important;
+}
+// Uk Tooltip Custom
+.uk-tooltip-cutom {
+  position: $relative;
+  .uk-tooltip {
+    position: $absolute;
+    top: $val15;
+    min-width: 200px;
+    &[class*="uk-animation-"] {
+      animation: 0.3s ease-out both;
+    }
+    &.uk-animation-scale-up {
+      animation-name: uk-fade, uk-scale-up;
+      &::after {
+        margin-top: 0px !important;
+      }
+    }
+  }
+  &:hover {
+    .uk-tooltip {
+      display: $block !important;
+    }
+  }
+  .font-10 {
+    font-size: $val10;
+  }
+  .ml-3 {
+    margin-left: 3px;
+  }
+  .top-2 {
+    top: 2px;
+    position: $relative;
+  }
+}
+.uk-tooltip-bottom {
+  left: -89px;
+  top: $val100;
+  z-index: $z-ix999;
+  }

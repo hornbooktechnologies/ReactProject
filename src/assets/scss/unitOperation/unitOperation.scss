@@ -1,0 +1,87 @@
+@import "../_color";
+@import "../_variables";
+
+.bg-grey-blue-40-a10 {
+  background-color: rgba($grey_blue_40, 0.1);
+}
+.color-grey-blue-60 {
+  color: $grey_blue_60;
+}
+.min-w-1190 {
+  min-width: 1190px;
+}
+.m-w-110 {
+  min-width: 110px;
+}
+.max-height-500 {
+  max-height: $val10 * 50;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+// uk Table start
+.uk-table {
+  &.uk-table-divider {
+    th,
+    td {
+      border: 1px $solid $grey_blue_40;
+      text-align: left;
+      padding: $val10 $val10 - 2;
+      color: $white;
+      font-size: $val15 - 1;
+      .icn {
+        position: $relative;
+        top: 2px;
+        &.icn-right {
+          float: $right;
+        }
+      }
+    }
+    th {
+      background-color: rgba($white, 0.1);
+      font-size: $val15 + 1;
+      vertical-align: $middle;
+      text-transform: $inherit;
+      font-weight: 500;
+      text-align: $center;
+    }
+  }
+  &.uk-text-center {
+    th,
+    td {
+      text-align: $center;
+    }
+  }
+  &.uk-text-right {
+    th,
+    td {
+      text-align: $right;
+    }
+  }
+  &.uk-table-sm {
+    th {
+      font-size: $val15 - 2 !important;
+    }
+    td {
+      font-size: $val15 - 3 !important;
+    }
+  }
+  &.uk-table-middle {
+    th,
+    td {
+      vertical-align: $middle !important;
+    }
+  }
+}
+.min-w-86 {
+  min-width: 86px;
+  width: fit-content;
+  margin-top: $val0;
+}
+
+@media (max-width: 767px) {
+  .media-mt-30 {
+    margin-top: 3 * $val10;
+  }
+}
+

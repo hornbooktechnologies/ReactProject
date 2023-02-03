@@ -1,0 +1,11 @@
+parameters:
+- name: previewName # name of the parameter; required
+  type: string      # data type of the parameter; required 
+  default: false
+
+steps:
+- task: CmdLine@2
+  displayName: Echo PR Source
+  inputs:
+    script: |
+      echo "Current Preview: $(previewName)"

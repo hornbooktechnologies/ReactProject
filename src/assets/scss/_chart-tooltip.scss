@@ -1,0 +1,71 @@
+.recharts-tooltip-wrapper {
+    border: 2px $solid $grey_blue_10  !important;
+    background-color: $transparent;
+    border-radius: 7px;
+    .rechart-custom-tooltip {
+        color: $white;
+        border: $none !important;
+        font-size: 0.7rem;
+        border-radius: 7px;
+        width: $auto;
+        .tooltip-period-section {
+            display: $flex;
+            flex-direction: $column;
+            text-align: $left;
+            padding: 6px $val15;
+            height: 33px;
+            font-size: 14px;
+            justify-content: $left;
+            background: $mirageLight;
+            border-radius: 5px 5px $val0 $val0;
+        }
+        .tooltip-main-section {
+            display: $flex;
+            flex-direction: $column;
+            height: $auto;
+            width: $auto;
+            min-height: 5*$val10;
+            background: $mirageDark;
+            justify-content: $center;
+            text-align: $left;
+            padding: $val10 $val10;
+            list-style: $none;
+            font-size: 12px;
+            margin: $val0;
+            border-radius: 0px 0px 5px 5px;
+            .tooltip-name-section {
+                padding: 5px $val0;
+            }
+        }
+    }
+}
+
+.tooltip-header {
+    color: $white;
+    display: flex;
+    justify-content: flex-start;
+    height: 33px;
+    padding: 8px 10px;
+    font-weight: normal;
+    background: $arsenic_dark;
+    align-items: $center;
+    font-size: 12px;
+    margin-bottom: 10px !important;
+}
+
+.tooltip-content {
+    height: 17px;
+    padding: 0 10px 10px 5px !important;
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    margin: 5px 0 !important;
+}
+
+.currentstatus-tooltip{
+    padding-bottom: 10px;
+    background: $greymedium;
+}

@@ -1,0 +1,47 @@
+@import "../color";
+@import "../_variables";
+
+.custom-label-text {
+  font-size: 9px;
+}
+
+.svg {
+  height: 2 * $val10;
+  width: 2 * $val10;
+}
+
+// grid scss start
+.uk-grid {
+  .uk-grid-margin {
+    margin-top: 24px !important;
+  }
+}
+// grid scss end
+
+//linechart container start//
+.linechartContainer {
+  height: 400px;
+  width: $w100;
+  text-align: -webkit-center;
+}
+//linechart container end//
+.noDataText {
+  height: $val100;
+  align-items: $center
+}
+@media (max-width: 960px) {
+  .m-w-300 {
+    min-width: $auto;
+  }
+  .mt-50 {
+    margin-top: 24px;
+  }
+  .linechartContainer {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 680px) {
+  .linechartContainer {
+    margin-bottom: 80px;
+  }
+}

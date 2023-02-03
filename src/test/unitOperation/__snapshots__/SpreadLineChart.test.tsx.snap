@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: SpreadLineChart SpreadLineChart renders correctly 1`] = `
+<div
+  className="uk-card mb-24 mt-24"
+  uk-card="true"
+>
+  <div
+    className="noDataText uk-flex uk-flex-center"
+  >
+    <h2
+      className="mb-0"
+    >
+      ANNUAL_TARGET.NO_DATA_AVAILABLE
+    </h2>
+  </div>
+</div>
+`;

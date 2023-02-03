@@ -1,0 +1,152 @@
+@import 'variables';
+/* noto-sans-jp-regular - latin_japanese */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans JP'),
+    url('../fonts/noto-sans-jp-v36-latin_japanese-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/noto-sans-jp-v36-latin_japanese-regular.eot')
+    format('embedded-opentype'),
+    /* Super Modern Browsers */
+      url('../fonts/noto-sans-jp-v36-latin_japanese-regular.woff')
+      format('woff'),
+    /* Modern Browsers */
+      url('../fonts/noto-sans-jp-v36-latin_japanese-regular.svg#NotoSansJP')
+      format('svg'); /* Legacy iOS */
+}
+/* noto-sans-jp-500 - latin_japanese */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans JP'),
+    url('../fonts/noto-sans-jp-v36-latin_japanese-500.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/noto-sans-jp-v36-latin_japanese-500.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('../fonts/noto-sans-jp-v36-latin_japanese-500.woff') format('woff'),
+    /* Modern Browsers */
+      url('../fonts/noto-sans-jp-v36-latin_japanese-500.svg#NotoSansJP')
+      format('svg'); /* Legacy iOS */
+}
+/* noto-sans-jp-700 - latin_japanese */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans JP'),
+    url('../fonts/noto-sans-jp-v36-latin_japanese-700.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/noto-sans-jp-v36-latin_japanese-700.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('../fonts/noto-sans-jp-v36-latin_japanese-700.woff') format('woff'),
+    /* Modern Browsers */
+      url('../fonts/noto-sans-jp-v36-latin_japanese-700.svg#NotoSansJP')
+      format('svg'); /* Legacy iOS */
+}
+
+@mixin heading_h1 {
+  font-size: $heading_h1;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+@mixin heading_h2 {
+  font-size: $heading_h2;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+@mixin heading_h3 {
+  font-size: $heading_h3;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+@mixin heading_h4 {
+  font-size: $heading_h4;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+@mixin heading_h5 {
+  font-size: $heading_h5;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+@mixin heading_h6 {
+  font-size: $heading_h6 !important;
+  font-family: 'Noto Sans JP' !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  line-height: 1.4;
+}
+@mixin body_1 {
+  font-size: $body_1;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+@mixin body_2 {
+  font-size: $body_2;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+@mixin paragraph_1 {
+  font-size: $paragraph_1;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+@mixin label_sm {
+  font-size: $label_sm;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+h3 {
+  font-size: 1.5em;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+h6 {
+  font-size: 1.125em;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}

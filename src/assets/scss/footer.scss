@@ -1,0 +1,15 @@
+@import '_color';
+@import '_variables';
+
+.btn-feedback {
+  position: $fixed !important;
+  right: 2*$val10;
+  bottom: 2*$val10;
+  z-index: 2;
+  .a-feedbak{
+    &:hover{
+      color: $white !important;
+      text-decoration :$none !important
+    }
+  }
+}

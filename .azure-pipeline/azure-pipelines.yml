@@ -1,0 +1,178 @@
+# GLOBAL VARABLES (NEEDS TO BE SET WITH UI): 
+# - API_URL_PREVIEW
+# - API_URL_DEV
+# - API_URL_STG
+# - API_URL_PRD
+# - AZURE_CLIENT_ID_PREVIEW
+# - AZURE_CLIENT_ID_DEV
+# - AZURE_CLIENT_ID_STG
+# - AZURE_CLIENT_ID_PRD
+# - AZURE_TENANT_ID_PREVIEW
+# - AZURE_TENANT_ID_DEV
+# - AZURE_TENANT_ID_STG
+# - AZURE_TENANT_ID_PRD
+# - AZURE_REDIRECT_URI_PREVIEW
+# - AZURE_REDIRECT_URI_DEV
+# - AZURE_REDIRECT_URI_STG
+# - AZURE_REDIRECT_URI_PRD
+# - AZURE_SCOPE_PREVIEW
+# - AZURE_SCOPE_DEV
+# - AZURE_SCOPE_STG
+# - AZURE_SCOPE_PRD
+# - OOT_REDIRECT_URI_PREVIEW
+# - OOT_REDIRECT_URI_DEV
+# - OOT_REDIRECT_URI_STG
+# - OOT_REDIRECT_URI_PRD
+# - FEEDBACK_URL_PREVIEW
+# - FEEDBACK_URL_DEV
+# - FEEDBACK_URL_STG
+# - FEEDBACK_URL_PRD
+# - SONAR_USER
+# - SONAR_PWD
+# - SONAR_RESULT_SCAN_URL
+# - SONAR_PRJ_KEY
+# - SONAR_PRJ_NAME
+# - IMAGE_REPOSITORY
+# - CONTAINER_REGISTRY
+# - AGENT_POOL
+# - AGENT_TYPE
+# - TOKEN
+
+resources:
+  repositories:
+  - repository: DPMFPDeployment
+    type: git
+    name: DPM-FP/deployment
+    checkout: self
+variables:
+  # Container registry service connection established during pipeline creation
+  dockerRegistryServiceConnection: ACR
+  imageRepository: $(IMAGE_REPOSITORY)
+  containerRegistry: $(CONTAINER_REGISTRY)
+  dockerfilePath: $(Build.SourcesDirectory)/Dockerfile
+  azureSubscription: JERADevOps
+  aksNamespace: dpm-fp
+
+  
+
+  # Variables for PR STAGE 
+  ${{ if and(eq(variables['Build.Reason'], 'PullRequest'),eq(variables['System.PullRequest.TargetBranch'], 'refs/heads/master')) }}: 
+    previewName: $(System.PullRequest.SourceBranch)
+    PREVIEW_STATUS: Destroy
+
+  # Variables for Preview STAGE 
+  ${{ if contains(variables['Build.SourceBranch'], 'refs/heads/feature') }}:
+    PREVIEW_STATUS: Running
+    
+stages:
+- template: ./templates/stages/prepare.yml
+- template: ./templates/stages/build.yml
+  parameters:
+    ${{ if and(eq(variables['Build.Reason'], 'PullRequest'),eq(variables['System.PullRequest.TargetBranch'], 'refs/heads/master')) }}: 
+      stage: PR
+    ${{ if contains(variables['Build.SourceBranch'], 'refs/heads/feature') }}:
+      stage: Preview  
+      API_URL: $(API_URL_PREVIEW)
+      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID_PREVIEW)
+      AZURE_TENANT_ID: $(AZURE_TENANT_ID_PREVIEW)
+      AZURE_REDIRECT_URI: $(AZURE_REDIRECT_URI_PREVIEW)
+      AZURE_SCOPE: $(AZURE_SCOPE_PREVIEW)
+      OOT_REDIRECT_URI: $(OOT_REDIRECT_URI_PREVIEW)
+    ${{ if contains(variables['Build.SourceBranch'], 'refs/heads/master') }}:
+      
+      stage: Dev
+      API_URL: $(API_URL_DEV)
+      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID_DEV)
+      AZURE_TENANT_ID: $(AZURE_TENANT_ID_DEV)
+      AZURE_REDIRECT_URI: $(AZURE_REDIRECT_URI_DEV)
+      AZURE_SCOPE: $(AZURE_SCOPE_DEV)
+      OOT_REDIRECT_URI: $(OOT_REDIRECT_URI_DEV)
+    ${{ if and(contains(variables['Build.SourceBranch'], 'refs/tags/v'), contains(variables['Build.SourceBranch'], '-rc')) }}:
+      stage: Staging
+      API_URL: $(API_URL_STG)
+      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID_STG)
+      AZURE_TENANT_ID: $(AZURE_TENANT_ID_STG)
+      AZURE_REDIRECT_URI: $(AZURE_REDIRECT_URI_STG)
+      AZURE_SCOPE: $(AZURE_SCOPE_STG)
+      OOT_REDIRECT_URI: $(OOT_REDIRECT_URI_STG)
+    ${{ if and(contains(variables['Build.SourceBranch'], 'refs/tags/v'), not(contains(variables['Build.SourceBranch'], '-rc'))) }}:
+      stage: Production
+      API_URL: $(API_URL_PRD)
+      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID_PRD)
+      AZURE_TENANT_ID: $(AZURE_TENANT_ID_PRD)
+      AZURE_REDIRECT_URI: $(AZURE_REDIRECT_URI_PRD)
+      AZURE_SCOPE: $(AZURE_SCOPE_PRD)
+      OOT_REDIRECT_URI: $(OOT_REDIRECT_URI_PRD)
+
+
+- template: ./templates/stages/deploy.yml
+  parameters:
+    # Variables for PREVIEW STAGE
+    ${{ if contains(variables['Build.SourceBranch'], 'refs/heads/feature') }}:
+      stage: Preview
+      deployment: Preview 
+      environment: Preview  
+      kustomizeFolder: preview 
+      azureResourceGroup: AKS-Dev
+      aksName: jpdevaks
+      kubernetesServiceEndpoint: 'AKS-Preview'
+      aksNamespace: '$(aksNamespace)-preview'
+      API_URL: $(API_URL_PREVIEW)
+      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID_PREVIEW)
+      AZURE_TENANT_ID: $(AZURE_TENANT_ID_PREVIEW)
+      AZURE_REDIRECT_URI: $(AZURE_REDIRECT_URI_PREVIEW)
+      AZURE_SCOPE: $(AZURE_SCOPE_PREVIEW)
+      OOT_REDIRECT_URI: $(OOT_REDIRECT_URI_PREVIEW)
+      
+    # Variables for DEVELOPMENT STAGE
+    ${{ if contains(variables['Build.SourceBranch'], 'refs/heads/master') }}:
+      stage: Dev
+      deployment: Development 
+      environment: Development  
+      kustomizeFolder: dev 
+      azureResourceGroup: AKS-Dev
+      aksName: jpdevaks
+      kubernetesServiceEndpoint: 'AKS-Development'
+      aksNamespace: $(aksNamespace)
+      API_URL: $(API_URL_DEV)
+      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID_DEV)
+      AZURE_TENANT_ID: $(AZURE_TENANT_ID_DEV)
+      AZURE_REDIRECT_URI: $(AZURE_REDIRECT_URI_DEV)
+      AZURE_SCOPE: $(AZURE_SCOPE_DEV)
+      OOT_REDIRECT_URI: $(OOT_REDIRECT_URI_DEV)
+
+    # Variables for STAGING STAGE
+    ${{ if and(contains(variables['Build.SourceBranch'], 'refs/tags/v'), contains(variables['Build.SourceBranch'], '-rc')) }}:
+      stage: Staging
+      deployment: Staging
+      environment: Staging  
+      kustomizeFolder: staging 
+      azureResourceGroup: AKS-Stg
+      aksName: jpstgaks
+      kubernetesServiceEndpoint: 'AKS-Staging'
+      aksNamespace: $(aksNamespace)
+      API_URL: $(API_URL_STG)
+      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID_STG)
+      AZURE_TENANT_ID: $(AZURE_TENANT_ID_STG)
+      AZURE_REDIRECT_URI: $(AZURE_REDIRECT_URI_STG)
+      AZURE_SCOPE: $(AZURE_SCOPE_STG)
+      OOT_REDIRECT_URI: $(OOT_REDIRECT_URI_STG)
+
+    # Variables for PRODUCTION STAGE
+    ${{ if and(contains(variables['Build.SourceBranch'], 'refs/tags/v'), not(contains(variables['Build.SourceBranch'], '-rc'))) }}:
+      stage: Production
+      deployment: Production
+      environment: Production 
+      kustomizeFolder: prod 
+      azureResourceGroup: AKS-Prod
+      aksName: jpprodaks
+      kubernetesServiceEndpoint: 'AKS-Production'
+      aksNamespace: $(aksNamespace)
+      API_URL: $(API_URL_PRD)
+      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID_PRD)
+      AZURE_TENANT_ID: $(AZURE_TENANT_ID_PRD)
+      AZURE_REDIRECT_URI: $(AZURE_REDIRECT_URI_PRD)
+      AZURE_SCOPE: $(AZURE_SCOPE_PRD)
+      OOT_REDIRECT_URI: $(OOT_REDIRECT_URI_PRD)
+
+- template: ./templates/stages/cleanup.yml

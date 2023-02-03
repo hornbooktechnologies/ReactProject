@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: PlantDropdown PlantDropdown renders correctly 1`] = `
+<li
+  className="uk-dropdown-item "
+>
+  <a
+    href="false"
+    onClick={[Function]}
+  >
+    <i
+      className="jera-building icn-18 mr-5"
+    />
+    <span>
+      Plants
+    </span>
+    <i
+      className="jera-arrow-down-1 uk-margin-auto-left"
+    />
+  </a>
+  <div
+    className="dropdown-list"
+  >
+    <ul
+      className="uk-dropdown-submenu"
+    />
+  </div>
+</li>
+`;

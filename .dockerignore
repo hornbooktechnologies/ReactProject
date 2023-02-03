@@ -1,0 +1,15 @@
+.husky 
+.eslintignore 
+.eslintrc.json 
+.gitignore 
+.dockerignore
+.lintstagedrc
+.prettierignore 
+.prettierrc
+
+
+node_modules
+dist
+
+lib/jera-design-ui/node_modules
+lib/jera-design-ui/dist

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: ResponsiveLineChartContainer ResponsiveLineChartContainer renders correctly 1`] = `
+<div
+  className="recharts-responsive-container"
+  style={
+    Object {
+      "height": "75%",
+      "maxHeight": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "width": "100%",
+    }
+  }
+/>
+`;

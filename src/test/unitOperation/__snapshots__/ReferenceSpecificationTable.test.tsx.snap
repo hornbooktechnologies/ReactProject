@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: ReferenceSpecificationTable ReferenceSpecificationTable renders correctly 1`] = `
+<div
+  className="mt-24 pb-24"
+>
+  <div
+    className="uk-overflow-auto"
+  >
+    <table
+      className="uk-table uk-table-divider uk-text-left min-w-800"
+    >
+      <thead>
+        <tr>
+          <th />
+          <th
+            className="uk-text-center"
+          >
+            UNIT_OPERATION.REFERENCE_SPECIFICATION_TABLE_HEADER.NoOfStartStop
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            className="font-16 uk-text-middle bg-grey-blue-40-a10"
+          >
+            LABELS.ACTUAL
+          </td>
+          <td
+            className="uk-text-center"
+          >
+            1
+            UNIT_OPERATION.REFERENCE_SPECIFICATION_UNIT
+          </td>
+        </tr>
+        <tr>
+          <td
+            className="font-16 uk-text-middle bg-grey-blue-40-a10"
+          >
+            LABELS.FORECAST
+          </td>
+          <td
+            className="uk-text-center"
+          >
+            2
+            UNIT_OPERATION.REFERENCE_SPECIFICATION_UNIT
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

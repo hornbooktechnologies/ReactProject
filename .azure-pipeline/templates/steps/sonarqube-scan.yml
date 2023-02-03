@@ -1,0 +1,78 @@
+parameters: 
+- name: username
+  type: string
+
+- name: password
+  type: string
+
+- name: resultScanUrl
+  type: string 
+
+- name: projectKey
+  type: string 
+
+- name: projectName 
+  type: string 
+
+- name: aksName 
+  type: string 
+
+- name: azureResourceGroup 
+  type: string 
+
+steps: 
+- task: AzureCLI@2
+  inputs:
+      azureSubscription: 'JERADevOps'
+      scriptType: 'bash' 
+      scriptLocation: 'inlineScript'
+      inlineScript: 'az aks get-credentials --name ${{ parameters.aksName }} --resource-group ${{ parameters.azureResourceGroup }} --admin'
+
+- task: CmdLine@2
+  condition: contains(variables['Build.SourceBranch'], 'refs/heads/master')
+  displayName: Port_forward
+  inputs:
+    script: 'kubectl port-forward svc/sonarqube-sonarqube 9000:9000 -n sonarqube &'
+
+- task: SonarQubePrepare@4
+  condition: contains(variables['Build.SourceBranch'], 'refs/heads/feature')
+  displayName: 'Prepare analysis on SonarQube'
+  inputs:
+      SonarQube: 'SonarQube'
+      scannerMode: 'CLI'
+      configMode: 'manual'
+      cliProjectKey: ${{ parameters.projectKey }}
+      cliProjectName: ${{ parameters.projectName }}
+      cliSources: '.'
+      extraProperties: |
+        sonar.javascript.coveragePlugin=lcov
+        sonar.javascript.lcov.reportPaths=coverage/lcov.info
+
+  - task: SonarQubeAnalyze@4
+    condition: contains(variables['Build.SourceBranch'], 'refs/heads/feature')
+    displayName: 'Run Code Analysis'
+    
+  - task: SonarQubePublish@4
+    condition: contains(variables['Build.SourceBranch'], 'refs/heads/feature')
+    displayName: 'Publish Code Quality Gate Result '
+    inputs: 
+      pollingTimeoutSec: '300'
+
+  - task: PowerShell@2
+    condition: contains(variables['Build.SourceBranch'], 'refs/heads/feature')
+    inputs:
+          targetType: 'inline'
+          script: |
+            $token = [System.Text.Encoding]::UTF8.GetBytes(("${{ parameters.username }}:${{ parameters.password }}"))
+            $base64 = [System.Convert]::ToBase64String($token)
+            
+            $basicAuth = [string]::Format("Basic {0}", $base64)
+            $headers = @{ Authorization = $basicAuth }
+            $result = Invoke-RestMethod -Method Get -Uri ${{ parameters.resultScanUrl }} -Headers $headers -UseDefaultCredential -AllowUnencryptedAuthentication
+            $result | ConvertTo-Json | Write-Host
+            
+            if ($result.projectStatus.status -eq "OK") {
+            Write-Host "Quality Gate Succeeded"
+            }else{
+            throw "Quality gate has failed" 
+            }

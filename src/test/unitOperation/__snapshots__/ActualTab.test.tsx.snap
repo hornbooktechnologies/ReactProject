@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: ActualTab ActualTab renders correctly 1`] = `
+<li
+  className=""
+>
+  <div
+    className="uk-card mt-24"
+    uk-card="true"
+  >
+    <h6
+      className="font-18 uk-text-medium"
+    >
+      LABELS.ACTUAL
+    </h6>
+    <div
+      className="full-height"
+    >
+      <div
+        className="recharts-responsive-container mt-30"
+        style={
+          Object {
+            "height": 380,
+            "maxHeight": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "width": "100%",
+          }
+        }
+      />
+      <div
+        className="control-button"
+      >
+        <button
+          className="disableBtn button float-left ml-5"
+          disabled={true}
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-chevron-left"
+          />
+        </button>
+        <button
+          className="disableBtn button float-right mr-2"
+          disabled={true}
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
+      <div
+        className="uk-flex uk-flex-center mb-3 mt-3 annualBarLegend"
+      >
+        <div
+          className="pr-0"
+        >
+          <span
+            className="legend annual-tooltip roundedBar"
+          />
+        </div>
+        <div
+          className="pt-1"
+        >
+          <span
+            className="color-white"
+          >
+            LABELS.SPREAD_OPEARTION_TIME
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+`;

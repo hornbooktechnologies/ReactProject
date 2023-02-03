@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: CustomLabel CustomLabel renders correctly 1`] = `
+<g
+  fill="#AAB9C1"
+  transform="rotate(-90)"
+>
+  <rect
+    fill="#AAB9C1"
+    height={20}
+    rx="2"
+    width={50}
+    x={NaN}
+    y={NaN}
+  />
+  <text
+    className="custom-label-text"
+    dx={10}
+    dy={13}
+    fill="#231F20"
+    radius={10}
+    x={NaN}
+    y={NaN}
+  >
+    LABELS.PRESENT
+  </text>
+</g>
+`;

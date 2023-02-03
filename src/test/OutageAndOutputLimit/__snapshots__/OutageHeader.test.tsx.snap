@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: OutageHeader OutageHeader renders correctly 1`] = `
+<h5
+  className="mb-24 font-18"
+>
+  OutageHeader
+</h5>
+`;

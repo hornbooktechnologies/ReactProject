@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: UnitOperation UnitOperation renders correctly 1`] = `
+<div
+  className="spinner"
+>
+  <div
+    className="color-white"
+  >
+    <div
+      uk-spinner="ratio: 3"
+    />
+  </div>
+</div>
+`;

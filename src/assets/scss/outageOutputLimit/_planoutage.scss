@@ -1,0 +1,92 @@
+@import "../_color";
+@import "../_variables";
+
+.uk-up-icon {
+  display: inline-block;
+  width: 45px;
+  height: 44px;
+  background: $mirageDark;
+  border-radius: 8px;
+}
+h5 {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+.font-18 {
+  font-size: 18px;
+}
+.jera {
+  font-size: 1.7144em;
+}
+
+.ml--25 {
+  margin-left: -25px;
+}
+
+.font-8 {
+  font-size: 8px !important;
+}
+.mb-0 {
+  margin-bottom: $val0;
+}
+.mt-0 {
+  margin-top: $val0;
+}
+.font-28 {
+  font-size: 28px;
+}
+@media (min-width: 640px) {
+  .mt--35 {
+    margin-top: -35px;
+  }
+}
+@media (max-width: 767px) {
+  .media-mt-30 {
+    margin-top: 3*$val10;
+  }
+  .media-mt-24 {
+    margin-top: 24px;
+  }
+  .media-mb-20 {
+    margin-bottom: 2*$val10;
+  }
+}
+
+.content-padder {
+  div {
+    h5 {
+      &.mb-24 {
+        &.font-18 {
+          margin-top: $val0;
+        }
+      }
+    }
+  }
+  h5 {
+    &.mb-24 {
+      &.font-18 {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+.mm-10{
+  margin-left: -$val10;
+}
+
+.pl-10{
+  padding-left: $val10 !important;
+}
+.ml-3 {
+  margin-left: 3px;
+}
+
+.oot_button{
+  &:hover{
+    color: $white !important;
+  }
+}

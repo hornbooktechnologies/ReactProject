@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: PieRationValue PieRationValue renders correctly 1`] = `
+<div
+  className="uk-text-center"
+>
+  <div
+    className="uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-margin-auto-left uk-margin-auto-right"
+  >
+    <div
+      className="uk-border-dashed uk-width-medium"
+    >
+      <h3
+        className="uk-margin-remove font-20 mb-5"
+      >
+        <span
+          className="uk-tooltip-bottom-custom uk-tooltip-cutom text-highlight"
+        >
+          10
+          <span
+            className="font-8 uk-text-normal ml-3"
+          >
+            oku
+          </span>
+          <div
+            className="uk-transdorm-origin-center-bottom uk-tooltip-bottom-center uk-transform-origin-center-bottom uk-tooltip uk-animation-fade-up uk-animation-center uk-togglabe-enter uk-text-left font-10 uk-text-center font-normal"
+          >
+            <span
+              className="color-grey-blue-80 uk-display-block"
+            >
+              UNIT_OPERATION.PREVIOUS_DAY
+            </span>
+            <span
+              className="font-10 uk-text-bold uk-display-block mt-5"
+            >
+              12
+               
+              oku
+            </span>
+          </div>
+        </span>
+      </h3>
+      <p
+        className="font-12 mt-0 mb-10"
+      >
+        LABELS.ACTUAL
+      </p>
+    </div>
+    <div
+      className="uk-width-medium"
+    >
+      <p
+        className="font-12 mt-10 mb-0"
+      >
+        LABELS.PLAN
+      </p>
+      <h3
+        className="uk-margin-remove font-20"
+      >
+        <span
+          className="uk-tooltip-bottom-custom uk-tooltip-cutom text-highlight"
+        >
+          15
+          <span
+            className="font-8 uk-text-normal ml-3"
+          >
+            oku
+          </span>
+          <div
+            className="uk-transdorm-origin-center-bottom uk-tooltip-bottom-center uk-transform-origin-center-bottom uk-tooltip uk-animation-fade-up uk-animation-center uk-togglabe-enter uk-text-left font-10 uk-text-center font-normal"
+          >
+            <span
+              className="color-grey-blue-80 uk-display-block"
+            >
+              UNIT_OPERATION.PREVIOUS_DAY
+            </span>
+            <span
+              className="font-10 uk-text-bold uk-display-block mt-5"
+            >
+              14
+               
+              oku
+            </span>
+          </div>
+        </span>
+      </h3>
+    </div>
+  </div>
+</div>
+`;

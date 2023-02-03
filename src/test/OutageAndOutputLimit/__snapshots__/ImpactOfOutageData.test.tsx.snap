@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: ImpactOfOutageData ImpactOfOutageData renders correctly 1`] = `
+<div
+  className="uk-card"
+>
+  <label
+    className="font-18"
+  >
+    ImpactOfOutageDataTitle
+  </label>
+  <div
+    className="mb-24"
+  >
+    <span
+      className=" font-28 uk-text-bold mt-0 mb-20 color-green-60
+                  "
+    >
+      +
+      10
+      <span
+        className=" font-10 color-white uk-text-top "
+      />
+    </span>
+  </div>
+  <div
+    className="uk-child-width-1-1@s uk-child-width-1-2@m uk-grid ml--25"
+    uk-grid="true"
+  >
+    <div
+      className="media-mb-20"
+    >
+      <p
+        className="uk-margin-remove font-14 color-green-60"
+      >
+        OUTAGE_AND_OUTPUT_LIMIT.INCREMENT_IMPACT
+      </p>
+      <span
+        className="mt-5 mb-0 uk-text-bold font-20 color-white
+                  "
+      >
+        +
+        <span
+          className="font-10 uk-text-normal uk-text-top"
+        />
+      </span>
+    </div>
+    <div>
+      <p
+        className="uk-margin-remove font-14 color-red-60"
+      >
+        OUTAGE_AND_OUTPUT_LIMIT.DECREMENT_IMPACT
+      </p>
+      <span
+        className="mt-5 mb-0 uk-text-bold font-20 
+                  color-white
+                  "
+      >
+        <span
+          className="font-10 uk-text-normal uk-text-top"
+        />
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,61 @@
+parameters:
+- name: stage
+  type: string
+
+- name: deployment
+  type: string
+
+- name: environment
+  type: string
+
+- name: kustomizeFolder
+  type: string
+
+- name: deployFileName
+  type: string
+  default: deploy-git.yml
+
+stages:
+- stage: Deploy
+  displayName: Deploy 
+  pool:
+    name: $(agentPool)
+    demands:
+      - Agent.Name -equals $(agentType)-$(Build.BuildId)
+  jobs:
+    - deployment: ${{ parameters.deployment }}
+      displayName: Deploying ${{ parameters.stage }}
+      environment: ${{ parameters.environment }} 
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+            - checkout: Deployment
+              submodules: true
+              persistCredentials: true
+            - template: ../steps/set-tag.yml
+            - template: ../steps/set-preview.yml
+
+            - task: CmdLine@2
+              displayName: Kustomize - Set image tag
+              inputs:
+                workingDirectory: '$(System.DefaultWorkingDirectory)/${{ parameters.kustomizeFolder }}'
+                script: |
+                  ls -la .
+                  kustomize edit set image "$(containerRegistry)/$(imageRepository):$(TAG)"
+                  cat kustomization.yaml
+
+            - task: CmdLine@2
+              displayName: Push new version to GitHub
+              inputs:
+                workingDirectory: '$(System.DefaultWorkingDirectory)'
+                script: |
+                  git checkout main 
+                  git config --global user.email $(gitEmail)
+                  git config --global user.name $(gitUsername)
+                  git config --list  
+                  git status
+                  git add ${{ parameters.kustomizeFolder }}/kustomization.yaml 
+                  git status
+                  git commit -m "pushing to ${{ parameters.stage }} $(imageRepository):$(TAG)"
+                  git push origin main

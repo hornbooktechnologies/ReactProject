@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: UnitOperation Tooltip UnitOperation Tooltip renders correctly 1`] = `
+<div
+  className="uk-transdorm-origin-center-bottom uk-tooltip-bottom-center uk-transform-origin-center-bottom uk-tooltip uk-animation-fade-up uk-animation-center uk-togglabe-enter uk-text-left font-10 uk-text-center font-normal"
+>
+  <span
+    className="color-grey-blue-80 uk-display-block"
+  >
+    UNIT_OPERATION.PREVIOUS_DAY
+  </span>
+  <span
+    className="font-10 uk-text-bold uk-display-block mt-5"
+  >
+    12
+     
+    YEN/kWh
+  </span>
+</div>
+`;

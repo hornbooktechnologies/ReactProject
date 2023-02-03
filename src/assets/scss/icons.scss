@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'JERAicon';
+  src:  url('../../assets/fonts/JERAicon.eot?kz0h3i');
+  src:  url('../../assets/fonts/JERAicon.eot?kz0h3i#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/JERAicon.ttf?kz0h3i') format('truetype'),
+    url('../../assets/fonts/JERAicon.woff?kz0h3i') format('woff'),
+    url('../../assets/fonts/JERAicon.svg?kz0h3i#JERAicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="jera-"], [class*=" jera-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'JERAicon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.jera-menu-arrow:before {
+  content: "\ecf7";
+}
+.jera-home-trend-up:before {
+  content: "\eae1";
+}
+.jera-graph:before {
+  content: "\eab6";
+}
+.jera-status:before {
+  content: "\ec69";
+}
+.jera-lamp-charge:before {
+  content: "\eb02";
+}
+.jera-arrow-down-1:before {
+  content: "\e931";
+}
+.jera-global:before {
+  content: "\eaaf";
+}
+.jera-logout:before {
+  content: "\eb25";
+}
+.jera-building:before {
+  content: "\e995";
+}
+.jera-tick-circle:before {
+  content: "\ec8e";
+}
+.jera-arrow-left-2:before {
+  content: "\e935";
+}
+.jera-arrow-right-3:before {
+  content: "\e93a";
+}
+.jera-calendar-1:before {
+  content: "\e99d";
+}
+.jera-like-1:before {
+  content: "\eb0c";
+}
+.jera-info-circle:before {
+  content: "\eaf3";
+}
+.jera-dislike:before {
+  content: "\ea2f";
+}
+.jera-undo:before {
+  content: "\ecb0";
+}
+.jera-stable-1:before {
+  content: "\ec62";
+}
+.jera-building-4:before {
+  content: "\e994";
+}

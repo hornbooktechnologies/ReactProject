@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: AverageSpread AverageSpread renders correctly 1`] = `
+<div>
+  <div
+    className="uk-card"
+  >
+    <h6
+      className="font-18 uk-text-medium"
+    >
+      Plan
+    </h6>
+    <div
+      className="uk-child-width-1-1@s uk-child-width-1-2@m uk-grid"
+      uk-grid="true"
+    >
+      <div
+        className="media-mt-30"
+      >
+        <p
+          className="uk-margin-remove font-14 uk-text-medium"
+        />
+        <div
+          className="uk-margin-remove uk-text-bold font-20"
+        >
+          <span
+            className=""
+          >
+            <span
+              className="font-12 uk-text-normal uk-text-top"
+            >
+              YEN/kWh
+            </span>
+            
+          </span>
+        </div>
+      </div>
+      <div
+        className="media-mt-30"
+      >
+        <p
+          className="uk-margin-remove font-14 uk-text-medium"
+        />
+        <div
+          className="uk-margin-remove uk-text-bold font-20"
+        >
+          <span
+            className=""
+          >
+            <span
+              className="font-12 uk-text-normal uk-text-top"
+            >
+              YEN/kWh
+            </span>
+            
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: CustomTabs CustomTabs renders correctly 1`] = `
+<ul
+  className="uk-tab "
+  uk-tab="true"
+/>
+`;

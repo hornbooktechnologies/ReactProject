@@ -1,0 +1,32 @@
+# GLOBAL VARABLES (NEEDS TO BE SET WITH UI): 
+# - AGENT_POOL
+# - AGENT_TYPE
+# - TOKEN
+
+trigger: none
+
+variables:
+- group: pipeline
+- name: previewName
+  value: $(System.PullRequest.SourceBranch)
+- ${{if contains(variables['Build.SourceBranch'], 'refs/heads/feature') }}:
+  - name: env
+    value: dev
+- ${{ if contains(variables['Build.SourceBranch'], 'refs/heads/master') }}:
+  - name: env
+    value: dev
+- ${{ if and(contains(variables['Build.SourceBranch'], 'refs/tags/v'), contains(variables['Build.SourceBranch'], '-rc')) }}:
+  - name: env
+    value: stg
+- ${{ if and(contains(variables['Build.SourceBranch'], 'refs/tags/v'), not(contains(variables['Build.SourceBranch'], '-rc'))) }}:
+  - name: env
+    value: prd
+    
+stages:
+- template: ../templates/stages/prepare.yml
+
+- template: ../templates/stages/pull-request-build.yml
+  parameters:
+    stage: PR 
+
+- template: ../templates/stages/cleanup.yml

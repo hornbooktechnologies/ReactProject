@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: SalesStats SalesStats renders correctly 1`] = `
+<div
+  className="uk-card"
+>
+  <h6
+    className="font-18"
+  >
+    Planned
+  </h6>
+  <label
+    className="font-14"
+  >
+    OUTAGE_AND_OUTPUT_LIMIT.PLANNED_PLAN
+  </label>
+  <div
+    className="font-20 uk-text-bold uk-margin-remove mb-20"
+  >
+    <span
+      className=""
+    >
+      8
+      <span
+        className="font-10 uk-text-normal"
+      >
+        円/kWh
+      </span>
+    </span>
+    <span
+      className="font-10 uk-text-normal"
+    >
+      <span
+        className="font-16"
+      >
+        (
+        <span>
+          1.2
+        </span>
+        <span
+          className="font-10"
+        >
+          OUTAGE_AND_OUTPUT_LIMIT.OUTAGE_PRICE_SUB_UNIT
+        </span>
+        )
+      </span>
+    </span>
+  </div>
+  <div
+    className="uk-child-width-1-1@s uk-child-width-1-2@m uk-grid"
+    uk-grid="true"
+  >
+    <div>
+      <p
+        className="uk-margin-remove font-14"
+      >
+        OUTAGE_AND_OUTPUT_LIMIT.PLANNED_ACTUAL
+      </p>
+      <div
+        className="uk-margin-remove uk-text-bold font-20"
+      >
+        <span
+          className=""
+        >
+          2
+          <span
+            className="font-10 uk-text-normal"
+          >
+            円/kWh
+          </span>
+        </span>
+        <span
+          className="uk-text-normal"
+        >
+          <span
+            className="font-16"
+          >
+            (
+            <span>
+              3
+            </span>
+            <span
+              className="font-10"
+            >
+              OUTAGE_AND_OUTPUT_LIMIT.OUTAGE_PRICE_SUB_UNIT
+            </span>
+            )
+          </span>
+        </span>
+      </div>
+    </div>
+    <div>
+      <p
+        className="uk-margin-remove font-14"
+      >
+        OUTAGE_AND_OUTPUT_LIMIT.UNPLANNED_ACTUAL
+      </p>
+      <div
+        className="uk-margin-remove uk-text-bold font-20"
+      >
+        <span
+          className=""
+        >
+          4
+          <span
+            className="font-10 uk-text-normal"
+          >
+            円/kWh
+          </span>
+        </span>
+        <span
+          className="font-10 uk-text-normal"
+        >
+          <span
+            className="font-16"
+          >
+            (
+            <span>
+              2.2
+            </span>
+            <span
+              className="font-10"
+            >
+              OUTAGE_AND_OUTPUT_LIMIT.OUTAGE_PRICE_SUB_UNIT
+            </span>
+            )
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

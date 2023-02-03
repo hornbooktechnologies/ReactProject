@@ -1,0 +1,44 @@
+@import "_color";
+@import "_variables";
+
+//dropDwon scss //
+.uk-select {
+  padding-right: 3 * $val10 !important;
+  &:not([multiple]):not([size]) {
+    background-image: url(../images/icn-down-arrow.svg) !important;
+    background-position: $right $val10 top 50%;
+    background-size: 13px;
+    option {
+      color: $white;
+    }
+  }
+}
+.uk-input {
+  border: 1px $solid $grey_blue_40 !important;
+  border-radius: 8px;
+  background-color: $blackPearl !important;
+  color: $grey_blue_95 !important;
+  -webkit-box-shadow: -7px -7px 3 * $val10 $cinder, 14px 14px 40px $russianBlack;
+  box-shadow: -7px -7px 30px $cinder, 14px 14px 40px $russianBlack;
+  padding: 0 $val15;
+  font-size: 14px;
+}
+.m-w-160 {
+  min-width: 160px;
+}
+//dropDwon scss end//
+
+.m-w-160 {
+  .form_select_input__control {
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 766px) {
+  .media-width-115{
+    width: 115px;
+  }
+  .media-min-width-115{
+    min-width: 115px;
+  }
+}

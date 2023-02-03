@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: AverageSpreadRecord AverageSpreadRecord renders correctly 1`] = `
+<div
+  className="media-mt-30"
+>
+  <p
+    className="uk-margin-remove font-14 uk-text-medium"
+  />
+  <div
+    className="uk-margin-remove uk-text-bold font-20"
+  >
+    <span
+      className=""
+    >
+      -0.53
+      <span
+        className="font-12 uk-text-normal uk-text-top"
+      >
+        YEN/kWh
+      </span>
+      
+    </span>
+  </div>
+</div>
+`;

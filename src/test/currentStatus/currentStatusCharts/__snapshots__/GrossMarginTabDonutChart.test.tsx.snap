@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: GrossMarginTabDonutChart GrossMarginTabDonutChart renders correctly 1`] = `
+<div
+  className="uk-flex uk-flex-middle uk-height-1-1"
+>
+  <div
+    className="uk-width-1-1"
+  >
+    <div
+      className="uk-flex uk-width-1-1 mb-20"
+    >
+      <label
+        className="uk-width-1-2 uk-text-right pr-24"
+      >
+        Plan
+      </label>
+      <p
+        className="uk-margin-remove-top uk-width-1-2 uk-text-left mt-5 mb-10 font-14"
+      >
+        <strong>
+          ¥
+          738
+          <span
+            className="uk-text-top font-10"
+          >
+            Oku
+          </span>
+        </strong>
+      </p>
+    </div>
+    <div
+      className="uk-flex uk-width-1-1 mb-20"
+    >
+      <label
+        className="uk-width-1-2 uk-text-right pr-24"
+      >
+        Forecast
+      </label>
+      <p
+        className="uk-margin-remove-top uk-width-1-2 uk-text-left mt-5 mb-10 font-14"
+      >
+        <strong>
+          ¥
+          970
+          <span
+            className="uk-text-top font-10"
+          >
+            Oku
+          </span>
+        </strong>
+      </p>
+    </div>
+    <div
+      className="uk-flex uk-width-1-1 mb-20"
+    >
+      <label
+        className="uk-width-1-2 uk-text-right pr-24"
+      >
+        Actual
+      </label>
+      <p
+        className="uk-margin-remove-top uk-margin-remove-bottom uk-width-1-2 uk-text-left"
+      >
+        <strong>
+          ¥
+          304
+          <span
+            className="uk-text-top font-10"
+          >
+            Oku
+          </span>
+        </strong>
+      </p>
+    </div>
+  </div>
+  <div
+    className="uk-flex uk-flex-center"
+  >
+    <div
+      className="uk-flex uk-flex-center"
+    >
+      <div
+        className="chart-continer"
+        style={
+          Object {
+            "height": 150,
+            "width": 150,
+          }
+        }
+      >
+        <div
+          className="dount-chart-container"
+        >
+          <div />
+        </div>
+        <div
+          className=" donutmiddleData"
+        >
+          <div
+            className="uk-text-center thumb-font"
+          >
+            <div
+              className="jera-like-font"
+            >
+              <i
+                className="jera color-green-60 jera-like-1"
+              />
+            </div>
+            <div
+              className="font-prvalue color-green-60"
+            >
+              <span>
+                131.44
+              </span>
+              <span
+                className="font-12 vertical-top"
+              >
+                %
+              </span>
+            </div>
+            <div>
+              <span
+                className="font-12 totalRatio"
+              >
+                CHARTS.DONUT.TOOLTIP_HEAD
+              </span>
+              <span
+                className="uk-tooltip-cutom tooltip-text"
+              >
+                <i
+                  className="jera-info-circle icn-16 color-blue-70 top-2 ml-3"
+                />
+                <div
+                  className="uk-tooltip uk-animation-scale-up uk-animation-center uk-transdorm-origin-center-left uk-togglabe-enter uk-tooltip-bottom uk-tooltip-bottom-center uk-transform-origin-center-left uk-text-left font-10"
+                >
+                  <span
+                    className="color-grey-blue-80 uk-display-block"
+                  >
+                    <strong
+                      className="color-grey-blue-95"
+                    >
+                      CHARTS.DONUT.TOOLTIP_MAIN_TEXT
+                    </strong>
+                      
+                    CHARTS.DONUT.TOOLTIP_SUB_TEXT
+                  </span>
+                  <span
+                    className="color-red-60 mt-15 uk-display-block"
+                  >
+                    CHARTS.DONUT.EQUATION
+                  </span>
+                  <span
+                    className="color-grey-blue-80 uk-display-block"
+                  >
+                    CHARTS.DONUT.EQUATION_LHS
+                     = Y (
+                    Forecast
+                    ) / X (
+                    Plan
+                    )
+                  </span>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

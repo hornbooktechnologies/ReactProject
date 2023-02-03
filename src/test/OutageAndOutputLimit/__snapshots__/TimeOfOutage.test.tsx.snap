@@ -1,0 +1,553 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: TimeOfOutage TimeOfOutage renders correctly 1`] = `
+Array [
+  <h5
+    className="mb-24 font-18"
+  >
+    OUTAGE_OUTPUTLIMIT_TITLE.TIME_OF_OUTAGE
+  </h5>,
+  <div
+    className="uk-grid ml--25"
+  >
+    <div
+      className="uk-width-1-3@m media-mb-20"
+    >
+      <div
+        className="uk-card uk-height-1-1"
+      >
+        <h5
+          className="mb-24 font-18"
+        >
+          LABELS.ANNUAL
+        </h5>
+        <div
+          className="mb-40 ml--25 uk-grid uk-child-width-1-2@s uk-child-width-1-2@m"
+          uk-grid="true"
+        >
+          <div
+            className="media-mb-20"
+          >
+            <div
+              className="uk-flex uk-flex-middle"
+            >
+              <span
+                className="uk-up-icon uk-text-center uk-inline mr-10"
+              >
+                <i
+                  className="jera uk-position-center font-32 color-green-60 jera-like-1"
+                />
+              </span>
+              <h6
+                className="uk-margin-remove font-14 color-green-60"
+              >
+                +
+                OUTAGE_AND_OUTPUT_LIMIT.IMPACT
+                <div>
+                  <span
+                    className="mt-5 mb-0 uk-text-bold font-14 
+                      color-white
+                       "
+                  >
+                    +
+                    <span
+                      className="font-8 uk-text-normal uk-text-capitalize"
+                    >
+                      LABELS.HRS
+                    </span>
+                  </span>
+                </div>
+              </h6>
+            </div>
+          </div>
+          <div
+            className="media-mb-20"
+          >
+            <div
+              className="uk-flex uk-flex-middle"
+            >
+              <span
+                className="uk-up-icon uk-text-center uk-inline mr-10"
+              >
+                <i
+                  className="jera uk-position-center font-32 color-red-60 jera-dislike"
+                />
+              </span>
+              <h6
+                className="uk-margin-remove font-14 color-red-60"
+              >
+                -
+                OUTAGE_AND_OUTPUT_LIMIT.IMPACT
+                <div>
+                  <span
+                    className="mt-5 mb-0 uk-text-bold font-14 
+                      color-white
+                       "
+                  >
+                    -
+                    <span
+                      className="font-8 uk-text-normal uk-text-capitalize"
+                    >
+                      LABELS.HRS
+                    </span>
+                  </span>
+                </div>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="uk-width-expand@m"
+    >
+      <div
+        className="uk-card mb-20"
+      >
+        <h5
+          className="mb-24 font-18"
+        >
+          LABELS.YEAR_START_TO_PRESENT
+        </h5>
+        <div
+          className="uk-grid uk-grid-small uk-child-width-1-3@s uk-child-width-1-3@m mm-10"
+          uk-grid="true"
+        >
+          <div
+            className="media-mb-20 pl-10"
+          >
+            <div>
+              <div
+                className="uk-flex uk-flex-middle mb-20"
+              >
+                <span
+                  className="uk-up-icon uk-text-center uk-inline mr-5"
+                >
+                  <i
+                    className="jera icn-24 color-green-60 jera-like-1 uk-position-center"
+                  />
+                </span>
+                <div>
+                  <p
+                    className="uk-margin-remove font-14"
+                  >
+                    Reduced Planned Outage Time
+                  </p>
+                  <span
+                    className="mb-0 uk-text-bold font-14 mt-5"
+                  >
+                    <span
+                      className=""
+                    >
+                      <span
+                        className="font-8 uk-text-normal ml-3"
+                      >
+                        LABELS.HRS
+                      </span>
+                    </span>
+                    <span
+                      className="font-8 uk-text-normal ml-3"
+                    >
+                      <span
+                        className="uk-text-bold font-12"
+                      >
+                        (
+                        <span
+                          className="font-8"
+                        >
+                          OUTAGE_AND_OUTPUT_LIMIT.OUTAGE_PRICE_SUB_UNIT
+                        </span>
+                        )
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                className="uk-flex uk-flex-middle "
+              >
+                <span
+                  className="uk-up-icon uk-text-center uk-inline mr-5"
+                >
+                  <i
+                    className="jera icn-24 color-green-60 jera-like-1 uk-position-center"
+                  />
+                </span>
+                <div>
+                  <p
+                    className="uk-margin-remove font-14"
+                  >
+                    Cancelled Planned Outage
+                  </p>
+                  <span
+                    className="mb-0 uk-text-bold font-14 mt-5"
+                  >
+                    <span
+                      className=""
+                    >
+                      <span
+                        className="font-8 uk-text-normal ml-3"
+                      >
+                        LABELS.HRS
+                      </span>
+                    </span>
+                    <span
+                      className="font-8 uk-text-normal ml-3"
+                    >
+                      <span
+                        className="uk-text-bold font-12"
+                      >
+                        (
+                        <span
+                          className="font-8"
+                        >
+                          OUTAGE_AND_OUTPUT_LIMIT.OUTAGE_PRICE_SUB_UNIT
+                        </span>
+                        )
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="pl-10"
+          >
+            <div>
+              <div
+                className="uk-flex uk-flex-middle mb-20"
+              >
+                <span
+                  className="uk-up-icon uk-text-center uk-inline mr-5"
+                >
+                  <i
+                    className="jera icn-24 color-red-60 jera-dislike uk-position-center"
+                  />
+                </span>
+                <div>
+                  <p
+                    className="uk-margin-remove font-14"
+                  >
+                    Increased Planned Outage Time
+                  </p>
+                  <span
+                    className="mb-0 uk-text-bold font-14 mt-5"
+                  >
+                    <span
+                      className=""
+                    >
+                      +
+                      <span
+                        className="font-8 uk-text-normal ml-3"
+                      >
+                        LABELS.HRS
+                      </span>
+                    </span>
+                    <span
+                      className="font-8 uk-text-normal ml-3"
+                    >
+                      <span
+                        className="uk-text-bold font-12"
+                      >
+                        (
+                        <span
+                          className="font-8"
+                        >
+                          OUTAGE_AND_OUTPUT_LIMIT.OUTAGE_PRICE_SUB_UNIT
+                        </span>
+                        )
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                className="uk-flex uk-flex-middle "
+              >
+                <span
+                  className="uk-up-icon uk-text-center uk-inline mr-5"
+                >
+                  <i
+                    className="jera icn-24 color-red-60 jera-dislike uk-position-center"
+                  />
+                </span>
+                <div>
+                  <p
+                    className="uk-margin-remove font-14"
+                  >
+                    Unplanned Outage
+                  </p>
+                  <span
+                    className="mb-0 uk-text-bold font-14 mt-5"
+                  >
+                    <span
+                      className=""
+                    >
+                      +
+                      <span
+                        className="font-8 uk-text-normal ml-3"
+                      >
+                        LABELS.HRS
+                      </span>
+                    </span>
+                    <span
+                      className="font-8 uk-text-normal ml-3"
+                    >
+                      <span
+                        className="uk-text-bold font-12"
+                      >
+                        (
+                        <span
+                          className="font-8"
+                        >
+                          OUTAGE_AND_OUTPUT_LIMIT.OUTAGE_PRICE_SUB_UNIT
+                        </span>
+                        )
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="uk-text-center mt--35"
+          >
+            <div
+              className="uk-flex uk-flex-center uk-flex-middle uk-flex-column chart-100 uk-margin-auto-left uk-margin-auto-right"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="uk-card"
+      >
+        <h5
+          className="mb-24 font-18"
+        >
+          LABELS.PRESENT_TO_YEAR_END
+        </h5>
+        <div
+          className="uk-grid uk-grid-small uk-child-width-1-3@s uk-child-width-1-3@m mm-10"
+          uk-grid="true"
+        >
+          <div
+            className="media-mb-20 pl-10"
+          >
+            <div>
+              <div
+                className="uk-flex uk-flex-middle mb-20"
+              >
+                <span
+                  className="uk-up-icon uk-text-center uk-inline mr-5"
+                >
+                  <i
+                    className="jera icn-24 color-green-60 jera-like-1 uk-position-center"
+                  />
+                </span>
+                <div>
+                  <p
+                    className="uk-margin-remove font-14"
+                  >
+                    Reduced Planned Outage Time
+                  </p>
+                  <span
+                    className="mb-0 uk-text-bold font-14 mt-5"
+                  >
+                    <span
+                      className=""
+                    >
+                      <span
+                        className="font-8 uk-text-normal ml-3"
+                      >
+                        LABELS.HRS
+                      </span>
+                    </span>
+                    <span
+                      className="font-8 uk-text-normal ml-3"
+                    >
+                      <span
+                        className="uk-text-bold font-12"
+                      >
+                        (
+                        <span
+                          className="font-8"
+                        >
+                          OUTAGE_AND_OUTPUT_LIMIT.OUTAGE_PRICE_SUB_UNIT
+                        </span>
+                        )
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                className="uk-flex uk-flex-middle "
+              >
+                <span
+                  className="uk-up-icon uk-text-center uk-inline mr-5"
+                >
+                  <i
+                    className="jera icn-24 color-green-60 jera-like-1 uk-position-center"
+                  />
+                </span>
+                <div>
+                  <p
+                    className="uk-margin-remove font-14"
+                  >
+                    Cancelled Planned Outage
+                  </p>
+                  <span
+                    className="mb-0 uk-text-bold font-14 mt-5"
+                  >
+                    <span
+                      className=""
+                    >
+                      <span
+                        className="font-8 uk-text-normal ml-3"
+                      >
+                        LABELS.HRS
+                      </span>
+                    </span>
+                    <span
+                      className="font-8 uk-text-normal ml-3"
+                    >
+                      <span
+                        className="uk-text-bold font-12"
+                      >
+                        (
+                        <span
+                          className="font-8"
+                        >
+                          OUTAGE_AND_OUTPUT_LIMIT.OUTAGE_PRICE_SUB_UNIT
+                        </span>
+                        )
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="pl-10"
+          >
+            <div>
+              <div
+                className="uk-flex uk-flex-middle mb-20"
+              >
+                <span
+                  className="uk-up-icon uk-text-center uk-inline mr-5"
+                >
+                  <i
+                    className="jera icn-24 color-red-60 jera-dislike uk-position-center"
+                  />
+                </span>
+                <div>
+                  <p
+                    className="uk-margin-remove font-14"
+                  >
+                    Increased Planned Outage Time
+                  </p>
+                  <span
+                    className="mb-0 uk-text-bold font-14 mt-5"
+                  >
+                    <span
+                      className=""
+                    >
+                      +
+                      <span
+                        className="font-8 uk-text-normal ml-3"
+                      >
+                        LABELS.HRS
+                      </span>
+                    </span>
+                    <span
+                      className="font-8 uk-text-normal ml-3"
+                    >
+                      <span
+                        className="uk-text-bold font-12"
+                      >
+                        (
+                        <span
+                          className="font-8"
+                        >
+                          OUTAGE_AND_OUTPUT_LIMIT.OUTAGE_PRICE_SUB_UNIT
+                        </span>
+                        )
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                className="uk-flex uk-flex-middle "
+              >
+                <span
+                  className="uk-up-icon uk-text-center uk-inline mr-5"
+                >
+                  <i
+                    className="jera icn-24 color-red-60 jera-dislike uk-position-center"
+                  />
+                </span>
+                <div>
+                  <p
+                    className="uk-margin-remove font-14"
+                  >
+                    Unplanned Outage
+                  </p>
+                  <span
+                    className="mb-0 uk-text-bold font-14 mt-5"
+                  >
+                    <span
+                      className=""
+                    >
+                      +
+                      <span
+                        className="font-8 uk-text-normal ml-3"
+                      >
+                        LABELS.HRS
+                      </span>
+                    </span>
+                    <span
+                      className="font-8 uk-text-normal ml-3"
+                    >
+                      <span
+                        className="uk-text-bold font-12"
+                      >
+                        (
+                        <span
+                          className="font-8"
+                        >
+                          OUTAGE_AND_OUTPUT_LIMIT.OUTAGE_PRICE_SUB_UNIT
+                        </span>
+                        )
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="uk-text-center mt--35"
+          >
+            <div
+              className="uk-flex uk-flex-center uk-flex-middle uk-flex-column chart-100 uk-margin-auto-left uk-margin-auto-right"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

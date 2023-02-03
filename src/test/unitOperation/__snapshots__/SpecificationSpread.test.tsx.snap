@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: SpecificationSpread SpecificationSpread renders correctly 1`] = `
+<div>
+  <h5
+    className="mb-24 mt-24 font-18 uk-text-medium"
+  >
+    UNIT_OPERATION.SPECIFICATION_SPREAD
+  </h5>
+  <div
+    className="uk-flex uk-flex-middle uk-flex-wrap mb-20 align-end"
+  >
+    <div
+      className="uk-flex uk-flex-center"
+    >
+      <div
+        className="mr-24 dropdown-select form-control"
+      >
+        <label
+          className="uk-custom-label"
+        >
+          <span>
+            UNIT_OPERATION.DROPDOWN_TITLE
+          </span>
+        </label>
+        <div
+          className=" css-b62m3t-container"
+          onKeyDown={[Function]}
+        >
+          <span
+            className="css-1f43avz-a11yText-A11yText"
+            id="react-select-2-live-region"
+          />
+          <span
+            aria-atomic="false"
+            aria-live="polite"
+            aria-relevant="additions text"
+            className="css-1f43avz-a11yText-A11yText"
+          />
+          <div
+            className="form_select_input__control css-1s2u09g-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <div
+              className="form_select_input__value-container css-319lph-ValueContainer"
+            >
+              <div
+                className="form_select_input__placeholder css-14el2xx-placeholder"
+                id="react-select-2-placeholder"
+              >
+                Select...
+              </div>
+              <input
+                aria-autocomplete="list"
+                aria-controls="react-select-2-listbox"
+                aria-describedby="react-select-2-placeholder"
+                aria-expanded={false}
+                aria-haspopup={true}
+                aria-owns="react-select-2-listbox"
+                aria-readonly={true}
+                className="css-mohuvp-dummyInput-DummyInput"
+                disabled={false}
+                id="react-select-2-input"
+                inputMode="none"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                role="combobox"
+                tabIndex={0}
+                value=""
+              />
+            </div>
+            <div
+              className="form_select_input__indicators css-1hb7zxy-IndicatorsContainer"
+            >
+              <span
+                className="form_select_input__indicator-separator css-1okebmr-indicatorSeparator"
+              />
+              <div
+                aria-hidden="true"
+                className="form_select_input__indicator form_select_input__dropdown-indicator css-tlfecz-indicatorContainer"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="css-tj5bde-Svg"
+                  focusable="false"
+                  height={20}
+                  viewBox="0 0 20 20"
+                  width={20}
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-control"
+      >
+        <label
+          className="uk-custom-label"
+        >
+          <span>
+            LABELS.DISPLAY
+          </span>
+        </label>
+        <div
+          className="align-end mb-0 css-b62m3t-container"
+          onKeyDown={[Function]}
+        >
+          <span
+            className="css-1f43avz-a11yText-A11yText"
+            id="react-select-3-live-region"
+          />
+          <span
+            aria-atomic="false"
+            aria-live="polite"
+            aria-relevant="additions text"
+            className="css-1f43avz-a11yText-A11yText"
+          />
+          <div
+            className="form_select_input__control css-1s2u09g-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <div
+              className="form_select_input__value-container form_select_input__value-container--has-value css-319lph-ValueContainer"
+            >
+              <div
+                className="form_select_input__single-value css-qc6sy-singleValue"
+              >
+                DROPDOWN_OPTIONS.ANNUAL_VIEW
+              </div>
+              <input
+                aria-autocomplete="list"
+                aria-controls="react-select-3-listbox"
+                aria-expanded={false}
+                aria-haspopup={true}
+                aria-owns="react-select-3-listbox"
+                aria-readonly={true}
+                className="css-mohuvp-dummyInput-DummyInput"
+                disabled={false}
+                id="react-select-3-input"
+                inputMode="none"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                role="combobox"
+                tabIndex={0}
+                value=""
+              />
+            </div>
+            <div
+              className="form_select_input__indicators css-1hb7zxy-IndicatorsContainer"
+            >
+              <span
+                className="form_select_input__indicator-separator css-1okebmr-indicatorSeparator"
+              />
+              <div
+                aria-hidden="true"
+                className="form_select_input__indicator form_select_input__dropdown-indicator css-tlfecz-indicatorContainer"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="css-tj5bde-Svg"
+                  focusable="false"
+                  height={20}
+                  viewBox="0 0 20 20"
+                  width={20}
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="uk-margin-auto-left uk-flex uk-flex-middle uk-flex-wrap uk-width-1-1 uk-width-auto@s mt-15 top-m1"
+    >
+      <div
+        className="uk-flex uk-flex-middle uk-width-1-1 uk-width-auto@s"
+      >
+        <button
+          className="uk-button-outline"
+          onClick={[Function]}
+        >
+          <i
+            className="jera-arrow-left-2 color-white"
+          />
+        </button>
+        <div
+          className="uk-field-with-icon ml-10 m-w-200 uk-width-1-1 uk-width-auto@s mt-m14"
+        >
+          <div
+            className="form-control"
+          >
+            <label
+              className="uk-custom-label"
+            >
+              <span>
+                Year
+              </span>
+            </label>
+          </div>
+          <div
+            className="cal-inline"
+          >
+            <p
+              className="m-0 pr-4"
+            >
+              undefined
+            </p>
+          </div>
+          <label
+            className="mb-0"
+          >
+            <div
+              className="react-datepicker-wrapper"
+            >
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  className=""
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  readOnly={false}
+                  type="text"
+                  value="03/21/2022"
+                />
+              </div>
+            </div>
+            <i
+              className="jera-calendar-1 icn top-26"
+              onClick={[Function]}
+            />
+          </label>
+        </div>
+        <button
+          className="uk-button-outline ml-10"
+          onClick={[Function]}
+        >
+          <i
+            className="jera-arrow-right-3 color-white"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="uk-card mb-24 mt-24"
+    uk-card="true"
+  >
+    <div
+      className="noDataText uk-flex uk-flex-center"
+    >
+      <h2
+        className="mb-0"
+      >
+        ANNUAL_TARGET.NO_DATA_AVAILABLE
+      </h2>
+    </div>
+  </div>
+</div>
+`;

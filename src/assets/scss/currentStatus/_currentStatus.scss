@@ -1,0 +1,22 @@
+@import "../color";
+@import "../variables";
+
+.large-pie {
+  margin-top: 90px !important;
+}
+
+.gross-tooltip {
+  background: $green_40;
+}
+.opex-tooltip {
+  background: $red_40;
+}
+.ebitda-tooltip {
+  background: $blue_40;
+}
+.maintenance-tooltip {
+  background: $orange_40;
+}
+.operational-tooltip {
+  background: $red_70;
+}

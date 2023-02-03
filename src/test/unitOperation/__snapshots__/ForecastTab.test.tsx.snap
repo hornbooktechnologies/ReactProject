@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: ForecastTab ForecastTab renders correctly 1`] = `
+<li
+  className=""
+>
+  <div
+    className="uk-card mt-24"
+    uk-card="true"
+  >
+    <h6
+      className="font-18 uk-text-medium"
+    >
+      LABELS.FORECAST
+    </h6>
+    <div
+      className="full-height"
+    >
+      <div
+        className="recharts-responsive-container mt-30"
+        style={
+          Object {
+            "height": 380,
+            "maxHeight": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "width": "100%",
+          }
+        }
+      />
+      <div
+        className="control-button"
+      >
+        <button
+          className="disableBtn button float-left ml-5"
+          disabled={true}
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-chevron-left"
+          />
+        </button>
+        <button
+          className="disableBtn button float-right mr-2"
+          disabled={true}
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
+      <div
+        className="uk-flex uk-flex-center mb-3 mt-3 annualBarLegend"
+      >
+        <div
+          className="pr-0"
+        >
+          <span
+            className="legend forcast-tooltip roundedBar"
+          />
+        </div>
+        <div
+          className="pt-1"
+        >
+          <span
+            className="color-white"
+          >
+            CURRENT_STATUS.FORCAST_REVERSE_ZAYA_DR_TIME
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+`;

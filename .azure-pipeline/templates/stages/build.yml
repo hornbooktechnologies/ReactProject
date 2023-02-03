@@ -1,0 +1,61 @@
+parameters:
+- name: stage
+  type: string
+
+- name: API_URL
+  type: string
+
+- name: AZURE_CLIENT_ID
+  type: string
+
+- name: AZURE_TENANT_ID
+  type: string
+
+- name: AZURE_REDIRECT_URI
+  type: string
+
+- name: AZURE_SCOPE
+  type: string
+
+- name: OOT_REDIRECT_URI
+  type: string
+
+stages:
+- stage: Build
+  pool:
+    name: $(agentPool)
+    demands:
+      - Agent.Name -equals $(agentType)-$(Build.BuildId)
+      
+  jobs:  
+  - job: Build
+    displayName: Building ${{ parameters.stage }}
+    steps:
+    - checkout: self
+      submodules: true
+
+    - template: ../steps/set-commit.yml
+
+    - task: replacetokens@3
+      displayName: Replace Dockerfile tokens
+      inputs:
+        action: log warning
+        rootDirectory: '$(System.DefaultWorkingDirectory)'
+        targetFiles: 'Dockerfile'
+      env:            
+        API_URL: ${{ parameters.API_URL }}
+        AZURE_CLIENT_ID: ${{ parameters.AZURE_CLIENT_ID }}
+        AZURE_TENANT_ID: ${{ parameters.AZURE_TENANT_ID }}
+        AZURE_REDIRECT_URI: ${{ parameters.AZURE_REDIRECT_URI }}
+        AZURE_SCOPE: ${{ parameters.AZURE_SCOPE }}
+        OOT_REDIRECT_URI: ${{ parameters.OOT_REDIRECT_URI }}
+        
+    - task: AzureCLI@2
+      displayName: Build and push an image to ACR registry
+      condition: not(and(eq(variables['Build.Reason'], 'PullRequest'),eq(variables['System.PullRequest.TargetBranch'], 'refs/heads/master')))
+      inputs:
+        azureSubscription: 'JERADevOps'
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: | 
+          az acr build --image $(imageRepository):$(TAG) --registry JpContainerHub --file Dockerfile .

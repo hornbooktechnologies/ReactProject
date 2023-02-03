@@ -1,0 +1,132 @@
+parameters:
+- name: stage
+  type: string
+
+- name: deployment
+  type: string
+
+- name: environment
+  type: string
+
+- name: kustomizeFolder
+  type: string
+
+- name: azureResourceGroup
+  type: string
+
+- name: aksName
+  type: string
+
+- name: kubernetesServiceEndpoint
+  type: string
+
+- name: aksNamespace
+  type: string
+
+- name: API_URL
+  type: string
+
+- name: AZURE_CLIENT_ID
+  type: string
+
+- name: AZURE_TENANT_ID
+  type: string
+
+- name: AZURE_REDIRECT_URI
+  type: string
+
+- name: AZURE_SCOPE
+  type: string
+
+- name: OOT_REDIRECT_URI
+  type: string
+
+- name: deployFileName
+  type: string
+  default: deploy.yml
+
+stages:
+- stage: Deploy
+  displayName: Deploy 
+  pool:
+    name: $(AGENT_POOL)
+    demands:
+      - Agent.Name -equals $(AGENT_TYPE)-$(Build.BuildId)
+  jobs:
+    - deployment: ${{ parameters.deployment }}
+      displayName: Deploying ${{ parameters.stage }}
+      environment: ${{ parameters.environment }} 
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+            - checkout: DPMFPDeployment
+            - template: ../steps/set-commit.yml
+            - template: ../steps/set-preview.yml
+
+            - task: replacetokens@3
+              displayName: Replace kustomize manifest tokens
+              inputs:
+                action: log warning
+                rootDirectory: '$(System.DefaultWorkingDirectory)'
+                targetFiles: | 
+                  ./base/kustomization.yaml
+                  ./preview/kustomization.yaml
+
+            - task: AzureKeyVault@1
+              inputs:
+                azureSubscription: $(azureSubscription)
+                keyVaultName: JERA-Terraform-KeyVault
+                secretsFilter: '*'
+                runAsPreJob: false # Azure DevOps Services only
+
+            - task: CmdLine@2
+              displayName: Pull Submodules
+              inputs:
+                script: |
+                  ls -la .
+                  git submodule set-url kustomize-manifests https://jeraossadmin:$(GITHUB-PAT-TOKEN)@github.com/jeraoss/kustomize-manifests
+                  git submodule update --init --recursive
+                  ls -la kustomize-manifests
+            
+            - task: CmdLine@2
+              displayName: Generate Kustomize Build
+              inputs:
+                workingDirectory: '$(System.DefaultWorkingDirectory)/${{ parameters.kustomizeFolder }}'
+                script: |
+                  ls -la .
+                  cat kustomization.yaml
+                  kustomize build -o $(System.DefaultWorkingDirectory)/deploy.yml 
+                  cat $(System.DefaultWorkingDirectory)/deploy.yml
+
+            - task: replacetokens@3
+              displayName: Replace deploy.yml manifest tokens
+              inputs:
+                action: log warning
+                rootDirectory: '$(System.DefaultWorkingDirectory)'
+                targetFiles: 'deploy.yml'
+              env:            
+                IMAGE: '$(CONTAINER_REGISTRY)/$(IMAGE_REPOSITORY):$(TAG)'
+                API_URL_PREVIEW: ${{ parameters.API_URL }}
+                AZURE_CLIENT_ID_PREVIEW: ${{parameters.AZURE_CLIENT_ID}}
+                AZURE_TENANT_ID_PREVIEW: ${{parameters.AZURE_TENANT_ID}}
+                AZURE_REDIRECT_URI_PREVIEW: ${{parameters.AZURE_REDIRECT_URI}}
+                AZURE_SCOPE_PREVIEW: ${{parameters.AZURE_SCOPE}}
+                OOT_REDIRECT_URI_PREVIEW: ${{ parameters.OOT_REDIRECT_URI }}
+
+            - task: CmdLine@2
+              displayName: Display deploy.yml output
+              inputs:
+                script: cat deploy.yml
+
+            - task: AzureCLI@2
+              inputs:
+                azureSubscription: 'JERADevOps'
+                scriptType: 'bash'
+                scriptLocation: 'inlineScript'
+                inlineScript: 'az aks get-credentials --name ${{ parameters.aksName }} --resource-group ${{ parameters.azureResourceGroup }} --admin'
+
+            - task: CmdLine@2
+              displayName: kubectl apply deploy.yml
+              inputs:
+                script: kubectl apply -f deploy.yml -n ${{ parameters.aksNamespace}}

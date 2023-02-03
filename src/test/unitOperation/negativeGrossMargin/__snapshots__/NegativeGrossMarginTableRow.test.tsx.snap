@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: NegativeGrossMarginTableRow NegativeGrossMarginTableRow renders correctly 1`] = `
+Array [
+  <tr>
+    <th
+      className="bg-grey-blue-40-a10"
+      colSpan={2}
+    >
+      UNIT_OPERATION.IMPACT_SPREAD_EBITDA
+    </th>
+    <td
+      className="  uk-text-middle"
+    >
+      <span
+        className="color-grey-blue-60 font-12"
+      >
+        (
+         - 
+        )
+      </span>
+      <span
+        className="  font-14 uk-display-block"
+      >
+         
+      </span>
+    </td>
+    <td
+      className="  uk-text-middle"
+    >
+      <span
+        className="color-grey-blue-60 font-12"
+      >
+        (
+         - 
+        )
+      </span>
+      <span
+        className="  font-14 uk-display-block"
+      >
+         
+      </span>
+    </td>
+    <td
+      className="  uk-text-middle"
+    >
+      <span
+        className="color-grey-blue-60 font-12"
+      >
+        (
+         - 
+        )
+      </span>
+      <span
+        className="  font-14 uk-display-block"
+      >
+         
+      </span>
+    </td>
+  </tr>,
+  <tr>
+    <th
+      className="bg-grey-blue-40-a10 w-220"
+      rowSpan={2}
+    >
+      UNIT_OPERATION.GROSSMARGIN_SPREAD
+    </th>
+    <th
+      className="bg-grey-blue-40-a10 w-220"
+    >
+      LABELS.PLAN
+    </th>
+    <td
+      className=" uk-text-middle"
+    >
+      <span
+        className=" uk-display-block"
+      >
+         
+      </span>
+    </td>
+    <td
+      className=" uk-text-middle"
+    >
+      <span
+        className=" uk-display-block"
+      >
+         
+      </span>
+    </td>
+    <td
+      className=" uk-text-middle"
+    >
+      <span
+        className=" uk-display-block"
+      >
+         
+      </span>
+    </td>
+  </tr>,
+  <tr>
+    <th
+      className="bg-grey-blue-40-a10"
+    >
+      LABELS.ACTUAL_FORECAST
+    </th>
+    <td
+      className=" uk-text-middle"
+    >
+      <span
+        className=" uk-display-block"
+      >
+         
+      </span>
+    </td>
+    <td
+      className=" uk-text-middle"
+    >
+      <span
+        className=" uk-display-block"
+      >
+         
+      </span>
+    </td>
+    <td
+      className=" uk-text-middle"
+    >
+      <span
+        className=" uk-display-block"
+      >
+         
+      </span>
+    </td>
+  </tr>,
+]
+`;

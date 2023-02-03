@@ -1,0 +1,122 @@
+// elevation style
+@import "_color";
+@mixin elevation_1 {
+  box-shadow: 0px 1px 3px 1px $grey_primary;
+}
+
+@mixin elevation_2 {
+  box-shadow: 0px 2px 6px 2px $grey_primary;
+}
+
+@mixin elevation_3 {
+  box-shadow: 0px 1px 3px $grey_primary;
+}
+
+@mixin elevation_4 {
+  box-shadow: 0px 2px 3px $grey_primary;
+}
+
+@mixin elevation_5 {
+  box-shadow: 0px 4px 4px $grey_primary;
+}
+
+@mixin shadow_nav {
+  box-shadow: 6.22px 6.22px 18.67px $grey_blue_10;
+}
+
+@mixin btn_elevation {
+  box-shadow: -10px -15px 40px #2f393d;
+}
+
+@mixin btn_elevation_diff {
+  box-shadow: 10px 10px 20px #181c27;
+}
+
+@mixin header_elevation {
+  box-shadow: -6px -6px 6px rgba(255, 255, 255, 0.5), 6px 6px 10px rgba(53, 58, 64, 0.25);
+}
+
+@mixin sidebar_shadow {
+  box-shadow: 6px 6px 10px rgba($grey_blue_10, 1), -6px -6px 6px rgba($white, 0.05);
+}
+
+@mixin easing {
+  transition: 0.3s ease;
+}
+
+@mixin radius-100 {
+  border-radius: 100px;
+}
+
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+}
+@mixin global_gradient {  
+  background: linear-gradient(208deg, rgba(31,35,40,1) 0%, $color_input_focus 100%);
+}
+@mixin global_shadow {  
+  box-shadow: 14px 14px 40px rgba(16,16,18, 0.75), -7px -7px 30px rgba(38,46,50, 1);
+}
+@mixin shadow-chart-donut {  
+  box-shadow: 20px 20px 70px #141415, -20px -20px 70px #485057;
+}
+@mixin global-radius {
+  border-radius: 8px;
+}
+$number: 60;
+$n: 20px;
+$spacing: (1, 2, 3, 4, 5, 10, 15, 20, 24, 30, 40, 50);
+
+$sides: ("top", "right", "bottom", "left");
+@mixin margin-class($side, $number) {
+  $firstLetter: str-slice($side, 0, 1);
+  .m#{$firstLetter}-#{$number}{
+     margin-#{$side}: #{$number}px !important;
+  }
+  .m#{$firstLetter}-m#{$number}{
+    margin-#{$side}: -#{$number}px !important;
+  }
+  .m-#{$number}{
+    margin: #{$number}px !important;
+  }
+}
+@mixin generate-margin(){
+  @each $margin in $spacing{
+     @each $side in $sides{
+       @include margin-class($side, $margin);
+     }
+  }
+}
+@include generate-margin();
+
+@mixin padding-class($side, $number) {
+  $firstLetter: str-slice($side, 0, 1);
+  .p#{$firstLetter}-#{$number}{
+     padding-#{$side}: #{$number}px !important;
+  }
+  .p-#{$number}{
+    padding: #{$number}px !important;
+  }
+}
+@mixin generate-padding(){
+  @each $padding in $spacing{
+     @each $side in $sides{
+       @include padding-class($side, $padding);
+     }
+  }
+}
+@include generate-padding();
+
+@mixin template_list_elevation {
+  box-shadow: -7px -7px 30px rgba(38, 46, 50, 1), 14px 14px 40px rgba(16, 16, 18, 0.75);
+}
+@mixin after_before {
+  content: '';
+  display: block;
+}
+@mixin df_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

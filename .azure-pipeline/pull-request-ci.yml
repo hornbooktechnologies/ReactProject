@@ -1,0 +1,18 @@
+# GLOBAL VARABLES (NEEDS TO BE SET WITH UI): 
+# - AGENT_POOL
+# - AGENT_TYPE
+# - TOKEN
+
+trigger: none
+
+variables:
+  previewName: $(System.PullRequest.SourceBranch)
+
+stages:
+- template: ./templates/stages/prepare.yml
+
+- template: ./templates/stages/pull-request-build.yml
+  parameters:
+    stage: PR 
+
+- template: ./templates/stages/cleanup.yml

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: AnnualImpact AnnualImpact renders correctly 1`] = `
+<div
+  className="media-mb-20"
+>
+  <div
+    className="uk-flex uk-flex-middle"
+  >
+    <span
+      className="uk-up-icon uk-text-center uk-inline mr-10"
+    >
+      <i
+        className="jera uk-position-center font-32 color-red-60 jera-dislike"
+      />
+    </span>
+    <h6
+      className="uk-margin-remove font-14 color-red-60"
+    >
+      OUTAGE_AND_OUTPUT_LIMIT.IMPACT
+      <div>
+        <span
+          className="mt-5 mb-0 uk-text-bold font-14 
+                      color-white
+                      uk-tooltip-bottom-custom uk-tooltip-cutom text-highlight "
+        >
+          +
+          10
+          <span
+            className="font-8 uk-text-normal uk-text-capitalize"
+          >
+            oku
+          </span>
+          <div
+            className="uk-transdorm-origin-center-bottom uk-tooltip-bottom-center uk-transform-origin-center-bottom uk-tooltip uk-animation-fade-up uk-animation-center uk-togglabe-enter uk-text-left font-10 uk-text-center font-normal"
+          >
+            <span
+              className="color-grey-blue-80 uk-display-block"
+            >
+              UNIT_OPERATION.PREVIOUS_DAY
+            </span>
+            <span
+              className="font-10 uk-text-bold uk-display-block mt-5"
+            >
+              +
+              20
+               
+              oku
+            </span>
+          </div>
+        </span>
+      </div>
+    </h6>
+  </div>
+</div>
+`;

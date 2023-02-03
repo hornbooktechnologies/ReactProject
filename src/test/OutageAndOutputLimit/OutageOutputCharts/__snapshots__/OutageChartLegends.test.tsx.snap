@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: OutageChartLegends OutageChartLegends renders correctly 1`] = `
+<div
+  className="timeseries-legends"
+>
+  <div
+    className="uk-flex uk-flex-middle uk-flex-center"
+    uk-flex=""
+  >
+    <div
+      className="uk-flex uk-flex-middle pl-20 mb-10 ml-10 mr-10"
+    >
+      <span
+        className="indicate actualLegend"
+      />
+      <div
+        className="ml-10"
+      >
+        <p
+          className="uk-margin-remove font-12"
+        >
+          OUTAGE_AND_OUTPUT_LIMIT.CHART_LEGENDS.ACTUAL
+        </p>
+      </div>
+    </div>
+    <div
+      className="uk-flex uk-flex-middle pl-20 mb-10 ml-10 mr-10"
+    >
+      <span
+        className="indicate forecastLegend"
+      />
+      <div
+        className="ml-10"
+      >
+        <p
+          className="uk-margin-remove font-12"
+        >
+          OUTAGE_AND_OUTPUT_LIMIT.CHART_LEGENDS.FORECAST
+        </p>
+      </div>
+    </div>
+    <div
+      className="uk-flex uk-flex-middle pl-20 mb-10 ml-10 mr-10"
+    >
+      <span
+        className="indicate salesLegend"
+      />
+      <div
+        className="ml-10"
+      >
+        <p
+          className="uk-margin-remove font-12"
+        >
+          OUTAGE_AND_OUTPUT_LIMIT.CHART_LEGENDS.SALES_UNIT_PRICE
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

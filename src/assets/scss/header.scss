@@ -1,0 +1,146 @@
+@import "_color";
+@import "_variables";
+
+.dark-header {
+  background: $header_bg !important;
+  box-shadow: -6px -6px 6px $witchHaze,
+    6px 6px $val10 $balticSeShadow;
+  position: $sticky;
+  top: $val0;
+  width: $val100;
+  .uk-logo {
+    transition: 0.3s ease;
+    background: $transparent $center $center;
+    background-size: 10%;
+    margin-left: $val0;
+    img {
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
+      width: 108px;
+    }
+  }
+  .uk-navbar-toggle {
+    width: 4 * $val10;
+    height: 4 * $val10;
+    min-height: $auto;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    border-radius: 100px;
+    background: $grey_blue_10;
+    &:hover {
+      background: $grey_blue_30;
+    }
+    .jera {
+      font-size: 1.5em;
+    }
+    i {
+      transition: 0.3s ease;
+      transform: rotate(180deg);
+    }
+  }
+}
+.uk-mt-20 {
+  margin-top: 20px;
+}
+.sm-sidebar {
+  .uk-navbar-toggle {
+    margin-left: $val10;
+    background: $grey_blue_30;
+    i{
+      transform: rotate(0deg);
+    }
+  }
+}
+.main-content {
+  .sidebar-left {
+    .uk-nav {
+      li {
+        &:hover {
+          background-color: $dullWhite;
+        }
+      }
+      li.active {
+        background-color: $dullWhite;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .for-m {
+    display: $none !important;
+  }
+}
+@media (max-width: 1200px) {
+  .for-w {
+    display: $none !important;
+  }
+  .for-m {
+    display: $block !important;
+  }
+  .mr-30 {
+    margin-right: $val15 !important;
+  }
+  .uk-container {
+    padding-left: 2 * $val10;
+    padding-right: 2 * $val10;
+  }
+  .top-header {
+    height: 6 * $val10;
+  }
+  .uk-navbar-item {
+    min-height: $auto;
+  }
+  .uk-navbar-toggle {
+    i {
+      transform: rotate(0deg) !important;
+    }
+  }
+  .sm-sidebar {
+    .uk-navbar-toggle {
+      margin-left: $auto;
+      i {
+        transform: rotate(180deg) !important;
+      }
+    }
+    .main-content {
+      padding-left: $val0;
+      .sidebar-left {
+        width: $val226;
+        left: $val0;
+      }
+    }
+  }
+  .main-content {
+    padding-left: $val0;
+    .sidebar-left {
+      width: $val226;
+      left: -$val256;
+      top: 6 * $val10;
+    }
+    .content {
+      min-height: calc(100vh - 60px);
+    }
+  }
+  .dark-header {
+    .uk-logo {
+      background: $none !important;
+      margin-left: $val0 !important;
+      img {
+        width: 78px !important;
+        opacity: 1 !important;
+      }
+    }
+  }
+  .uk-navbar-toggle {
+    margin-top: $val10 !important;
+    margin-left: $val15 !important;
+    margin-right: $val15;
+  }
+  .uk-navbar-right-0 {
+    margin-left: $val0;
+  }
+  .icn-user {
+    width: 24px;
+  }
+}
+

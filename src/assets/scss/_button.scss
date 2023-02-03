@@ -1,0 +1,100 @@
+@import "_color";
+@import "_variables";
+
+.uk-button {
+  padding: 7px $heading_h2 !important;
+  line-height: 1 !important;
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center !important;
+  border-radius: 30px !important;
+  text-transform: uppercase !important;
+  border: 0px;
+}
+.uk-button-primary {
+  background: linear-gradient(274.22deg, $blue_40 0.81%, $blue_70 96.42%);
+  background-color: $blue_70;
+  color: $white !important;
+  position: $relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    display: block;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background: linear-gradient(274.22deg, $blue_70 0.81%, $blue_40 96.42%);
+    background-color: $blue_70;
+    position: $absolute;
+    top: 2px;
+    left: 2px;
+    z-index: -1;
+    border-radius: 30px;
+  }
+  &:hover {
+    background: linear-gradient(274.22deg, $blue_70 0.81%, $blue_40 96.42%);
+    background-color: $blue_70;
+    &::before {
+      background: linear-gradient(274.22deg, $blue_40 0.81%, $blue_70 96.42%);
+      background-color: $blue_70;
+    }
+  }
+}
+.uk-button-large {
+  min-height: 50px !important;
+  font-size: 18px !important;
+}
+.btn-shadow {
+  box-shadow: 10px 10px 20px $blackRussian_10;
+}
+
+.uk-button-orange {
+  background: linear-gradient(274.22deg, $orange_40 0.81%, $orange_70 96.42%);
+  font-size: 14px !important;
+  background-color: $orange_40;
+  color: $white !important;
+  z-index: 1;
+  &::before {
+    content: "";
+    display: block;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background: linear-gradient(274.22deg, $orange_70 0.81%, $orange_40 96.42%);
+    background-color: $orange_70;
+    position: $absolute;
+    top: 2px;
+    left: 2px;
+    z-index: -1;
+    border-radius: 30px;
+  }
+  &:hover {
+    background: linear-gradient(
+      274.22deg,
+      $orange_70 0.81%,
+      $orange_40 96.42%
+    );
+    color: $white !important;
+    &::before {
+      background: linear-gradient(
+        274.22deg,
+        $orange_40 0.81%,
+        $orange_70 96.42%
+      );
+      color: $white !important;
+    }
+  }
+}
+
+.btn-feedback:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  position: $absolute;
+  border-color: $greyBlack;
+  border-width: 7px;
+  top: 100%;
+  left: 50%;
+  border-top-color: $orange_60;
+  margin-left: -7px;
+}

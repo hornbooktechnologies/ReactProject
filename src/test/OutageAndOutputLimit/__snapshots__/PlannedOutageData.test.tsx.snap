@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: PlannedOutageData PlannedOutageData renders correctly 1`] = `
+<div
+  className="uk-flex uk-flex-middle undefined"
+>
+  <span
+    className="uk-up-icon uk-text-center uk-inline mr-5"
+  >
+    <i
+      className="jera icn-24 undefined uk-position-center"
+    />
+  </span>
+  <div>
+    <p
+      className="uk-margin-remove font-14"
+    />
+    <span
+      className="mb-0 uk-text-bold font-14 mt-5"
+    >
+      <span
+        className=""
+      >
+        <span
+          className="font-8 uk-text-normal ml-3"
+        />
+      </span>
+      <span
+        className="font-8 uk-text-normal ml-3"
+      >
+        <span
+          className="uk-text-bold font-12"
+        >
+          (
+          <span
+            className="font-8"
+          >
+            OUTAGE_AND_OUTPUT_LIMIT.OUTAGE_PRICE_SUB_UNIT
+          </span>
+          )
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;
